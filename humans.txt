@@ -1,0 +1,27 @@
+/* TEAM */
+
+Name: AJDM Jakiur Rahman
+Role: Full-Stack Developer, DevOps Engineer, Founder & CEO of Lunova Digital
+Location: Dhaka, Bangladesh
+Website: https://ajdmjakiur.com/
+Company: https://lunovadigital.net/
+Contact: https://ajdmjakiur.com/contact/
+Email: hello@lunovadigital.net
+WhatsApp: +8801406618808
+
+/* TECHNOLOGIES */
+
+PHP 8, Laravel, WordPress, WooCommerce, Filament, Livewire
+MySQL, PostgreSQL, Redis
+Docker, Kubernetes, Nginx, Linux, AWS
+GitHub Actions, Jenkins, GitLab CI, Prometheus, Grafana, Cloudflare
+Kotlin, Java, Android SDK, Firebase
+Python, Scrapy, Selenium, Playwright, Celery
+REST API, GraphQL, Vue.js
+
+/* SITE */
+
+Last update: 2026-05
+Language: English
+Doctype: PHP (shared hosting, Apache)
+Standards: HTML5, WAI-ARIA, Schema.org JSON-LD

@@ -1,0 +1,62 @@
+# ajdmjakiur.com — AJDM Jakiur Rahman
+# Full-Stack Developer, DevOps Engineer & Founder of Lunova Digital
+# Dhaka, Bangladesh — Serving clients across Europe, UK, USA, Middle East
+
+User-agent: *
+Allow: /
+Disallow: /includes/
+
+Sitemap: https://ajdmjakiur.com/sitemap.xml
+
+# ── AI language model crawlers — explicitly allowed ───────────────────────────
+# These bots index content for AI-powered search and answer engines
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# ── Search engine crawlers ────────────────────────────────────────────────────
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: ia_archiver
+Allow: /
