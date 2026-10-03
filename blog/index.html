@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Blog — Engineering, Laravel, DevOps &amp;amp; Web Scraping | AJDM Jakiur Rahman</title>
+  <meta name="description" content="Practical engineering articles by AJDM Jakiur Rahman — Laravel, WordPress, DevOps, Python web scraping, SaaS, and CRM/ERP. Real lessons from production projects at Lunova Digital." />
+  <meta name="keywords" content="Jakiur Rahman blog, Laravel tutorials Bangladesh, web scraping guide, DevOps articles, software engineering blog Bangladesh, Lunova Digital blog" />
+  <meta name="author" content="AJDM Jakiur Rahman" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <link rel="canonical" href="https://ajdmjakiur.com/blog/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ajdmjakiur.com/blog/" />
+  <meta property="og:title" content="Engineering Blog by AJDM Jakiur Rahman" />
+  <meta property="og:description" content="Practical engineering articles by AJDM Jakiur Rahman — Laravel, WordPress, DevOps, Python web scraping, SaaS, and CRM/ERP. Real lessons from production projects at Lunova Digital." />
+  <meta property="og:image" content="https://ajdmjakiur.com/assets/images/ajdm-jakiur-rahman.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="AJDM Jakiur Rahman — Full-Stack Developer &amp; Founder of Lunova Digital" />
+  <meta property="og:site_name" content="AJDM Jakiur Rahman" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="en_GB" />
+
+  <!-- hreflang: English-speaking regions including Europe -->
+  <link rel="alternate" hreflang="en" href="https://ajdmjakiur.com/blog/" />
+  <link rel="alternate" hreflang="en-gb" href="https://ajdmjakiur.com/blog/" />
+  <link rel="alternate" hreflang="en-eu" href="https://ajdmjakiur.com/blog/" />
+  <link rel="alternate" hreflang="x-default" href="https://ajdmjakiur.com/blog/" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@ajdmjakiurr" />
+  <meta name="twitter:title" content="Engineering Blog by AJDM Jakiur Rahman" />
+  <meta name="twitter:description" content="Practical engineering articles by AJDM Jakiur Rahman — Laravel, WordPress, DevOps, Python web scraping, SaaS, and CRM/ERP. Real lessons from production projects at Lunova Digital." />
+  <meta name="twitter:image" content="https://ajdmjakiur.com/assets/images/ajdm-jakiur-rahman.jpg" />
+  <meta name="twitter:image:alt" content="AJDM Jakiur Rahman — Full-Stack Developer &amp; Founder of Lunova Digital" />
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" href="/assets/images/ajdm-jakiur-rahman.jpg" />
+  <meta name="theme-color" content="#2563eb" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="AJDM Jakiur Rahman — Blog" href="/feed.xml" />
+
+  <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://ajdmjakiur.com/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Blog",
+                    "item": "https://ajdmjakiur.com/blog/"
+                }
+            ]
+        },
+        {
+            "@type": "Blog",
+            "@id": "https://ajdmjakiur.com/blog/#blog",
+            "url": "https://ajdmjakiur.com/blog/",
+            "name": "AJDM Jakiur Rahman — Engineering Blog",
+            "description": "Engineering articles on Laravel, WordPress, DevOps, Python web scraping, SaaS, and CRM/ERP.",
+            "author": {
+                "@id": "https://ajdmjakiur.com/#person"
+            },
+            "publisher": {
+                "@id": "https://ajdmjakiur.com/#person"
+            }
+        },
+        {
+            "@type": "ItemList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "url": "https://ajdmjakiur.com/blog/web-scraping-services-bangladesh/",
+                    "name": "Web Scraping Services in Bangladesh: A Practical Guide for 2026"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "url": "https://ajdmjakiur.com/blog/hire-best-software-engineer-bangladesh/",
+                    "name": "How to Hire the Best Software Engineer in Bangladesh (2026)"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "url": "https://ajdmjakiur.com/blog/laravel-saas-multi-tenancy-guide/",
+                    "name": "How to Build a Multi-Tenant SaaS with Laravel"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 4,
+                    "url": "https://ajdmjakiur.com/blog/zero-downtime-deployment-docker-github-actions/",
+                    "name": "Zero-Downtime Deployment with Docker & GitHub Actions"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 5,
+                    "url": "https://ajdmjakiur.com/blog/custom-wordpress-plugin-development-guide/",
+                    "name": "Custom WordPress Plugin Development: When You Actually Need One"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 6,
+                    "url": "https://ajdmjakiur.com/blog/custom-crm-vs-off-the-shelf/",
+                    "name": "Custom CRM vs Off-the-Shelf: What Your Business Should Choose"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 7,
+                    "url": "https://ajdmjakiur.com/blog/native-vs-cross-platform-android/",
+                    "name": "Native Android vs Cross-Platform: How to Choose for Your App"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 8,
+                    "url": "https://ajdmjakiur.com/blog/cost-to-build-a-saas-2026/",
+                    "name": "How Much Does It Cost to Build a SaaS in 2026?"
+                }
+            ]
+        }
+    ]
+}  </script>
+</head>
+<body>
+  <a href="#main" class="sr-only">Skip to main content</a>
+
+  <header id="navbar" role="banner">
+    <div class="container nav-inner">
+      <a href="/" class="nav-logo" aria-label="AJDM Jakiur Rahman — Home">
+        <img src="/assets/images/ajdm-jakiur-rahman.jpg"
+             alt="AJDM Jakiur Rahman"
+             width="34" height="34"
+             class="nav-logo-photo"
+             loading="eager"
+             decoding="async" />
+        <span>AJDM Jakiur Rahman</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <ul class="nav-links" role="list">
+          <li><a href="/"          class="nav-link">Home</a></li>
+          <li><a href="/about/"    class="nav-link">About</a></li>
+          <li><a href="/services/" class="nav-link">Services</a></li>
+          <li><a href="/projects/" class="nav-link">Projects</a></li>
+          <li><a href="/blog/"     class="nav-link active" aria-current="page">Blog</a></li>
+          <li><a href="/contact/"  class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="https://wa.me/8801406618808?text=Hi%20Jakiur%2C%20I%20read%20your%20blog%20and%20want%20to%20discuss%20a%20project" target="_blank" rel="noopener noreferrer"
+         class="nav-cta btn-wa btn btn-sm" aria-label="Hire AJDM Jakiur Rahman via WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>        Hire Me
+      </a>
+      <button id="hamburger" class="nav-hamburger" aria-label="Toggle navigation"
+              aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div id="mobile-menu" role="navigation" aria-label="Mobile navigation">
+      <a href="/">Home</a>
+      <a href="/about/">About</a>
+      <a href="/services/">Services</a>
+      <a href="/projects/">Projects</a>
+      <a href="/blog/">Blog</a>
+      <a href="/contact/">Contact</a>
+      <a href="https://wa.me/8801406618808?text=Hi%20Jakiur%2C%20I%20read%20your%20blog%20and%20want%20to%20discuss%20a%20project" target="_blank" rel="noopener noreferrer"
+         class="mobile-wa-btn">Message on WhatsApp</a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-hero section section-dark" aria-labelledby="blog-h1">
+      <div class="container pos-relative z-1">
+        <nav aria-label="Breadcrumb" class="breadcrumb">
+          <ol role="list" class="d-flex gap-d5rem lst-none p-0 m-0-0-1d5rem fw2-wrap">
+            <li><a href="/" class="c-rgba255_255_255_d5">Home</a></li>
+            <li aria-hidden="true" class="c-rgba255_255_255_d3">/</li>
+            <li aria-current="page" class="c-rgba255_255_255_d6">Blog</li>
+          </ol>
+        </nav>
+        <p class="section-label">Field Notes from Production</p>
+        <h1 id="blog-h1" class="section-title c-hfff">Engineering Blog by AJDM Jakiur Rahman</h1>
+        <p class="section-desc c-rgba255_255_255_d75 mw-720px">
+          Practical, no-fluff articles on Laravel, WordPress, DevOps, Python web scraping, SaaS, and CRM/ERP —
+          drawn from real client projects delivered through <a href="https://lunovadigital.net" target="_blank" rel="noopener noreferrer" class="c-h93c5fd">Lunova Digital</a>.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-white" aria-label="Articles">
+      <div class="container">
+                <div class="grid-3">
+                    <article class="card reveal  d-flex fd-column p-0 ov-hidden">
+            <a href="https://ajdmjakiur.com/blog/web-scraping-services-bangladesh/" class="d-block td-none c-inherit">
+              <img src="https://ajdmjakiur.com/assets/images/ajdm-jakiur-rahman.jpg" alt="Web scraping and Python automation services in Bangladesh by AJDM Jakiur Rahman"
+                   width="640" height="360" loading="lazy" decoding="async"
+                   class="w-100pc h-180px of-cover bdb-1px-solid-he4e4e7" />
+            </a>
+            <div class="p-1d5rem d-flex fd-column flex-1">
+              <div class="d-flex gap-d5rem ai-center fs-d75rem c-h71717a mb-d6rem">
+                <span class="fw-700 c-h2563eb tt-uppercase ls-d05em">Python Automation</span>
+                <span aria-hidden="true">&bull;</span>
+                <time datetime="2026-08-13">13 August 2026</time>
+                <span aria-hidden="true">&bull;</span>
+                <span>9 min read</span>
+              </div>
+              <h2 class="fs-1d125rem fw-800 c-h09090b lh-1d35 mb-d5rem">
+                <a href="https://ajdmjakiur.com/blog/web-scraping-services-bangladesh/" class="c-inherit td-none">Web Scraping Services in Bangladesh: A Practical Guide for 2026</a>
+              </h2>
+              <p class="fs-d9rem c-h52525b lh-1d65 mb-1rem flex-1">How professional web scraping actually works in Bangladesh — legal boundaries, the right tools (Scrapy, Playwright), anti-bot handling, and how to hire a reliable scraping engineer.</p>
+              <a href="https://ajdmjakiur.com/blog/web-scraping-services-bangladesh/" class="d-inline-flex ai-center gap-d375rem fs-d875rem fw-600 c-h2563eb td-none">Read article →</a>
+            </div>
+          </article>
+                    <article class="card reveal reveal-d1 d-flex fd-column p-0 ov-hidden">
+            <a href="https://ajdmjakiur.com/blog/hire-best-software-engineer-bangladesh/" class="d-block td-none c-inherit">
+              <img src="https://ajdmjakiur.com/assets/images/ajdm-jakiur-rahman.jpg" alt="Hire the best software engineer in Bangladesh — AJDM Jakiur Rahman, founder of Lunova Digital"
+                   width="640" height="360" loading="lazy" decoding="async"
+                   class="w-100pc h-180px of-cover bdb-1px-solid-he4e4e7" />
+            </a>
+            <div class="p-1d5rem d-flex fd-column flex-1">
+              <div class="d-flex gap-d5rem ai-center fs-d75rem c-h71717a mb-d6rem">
+                <span class="fw-700 c-h2563eb tt-uppercase ls-d05em">Engineering</span>
+                <span aria-hidden="true">&bull;</span>
+                <time datetime="2026-08-12">12 August 2026</time>
+                <span aria-hidden="true">&bull;</span>
+                <span>8 min read</span>
+              </div>
+              <h2 class="fs-1d125rem fw-800 c-h09090b lh-1d35 mb-d5rem">
+                <a href="https://ajdmjakiur.com/blog/hire-best-software-engineer-bangladesh/" class="c-inherit td-none">How to Hire the Best Software Engineer in Bangladesh (2026)</a>
+              </h2>
+              <p class="fs-d9rem c-h52525b lh-1d65 mb-1rem flex-1">A practical framework for hiring a senior software engineer or development agency in Bangladesh — what to check, red flags to avoid, and why full-spectrum delivery beats a team of specialists.</p>
+              <a href="https://ajdmjakiur.com/blog/hire-best-software-engineer-bangladesh/" class="d-inline-flex ai-center gap-d375rem fs-d875rem fw-600 c-h2563eb td-none">Read article →</a>
+            </div>
+          </article>
+                    <article class="card reveal reveal-d2 d-flex fd-column p-0 ov-hidden">
+            <a href="https://ajdmjakiur.com/blog/laravel-saas-multi-tenancy-guide/" class="d-block td-none c-inherit">
+              <img src="https://ajdmjakiur.com/assets/images/ajdm-jakiur-rahman.jpg" alt="Building a multi-tenant SaaS with Laravel by AJDM Jakiur Rahman"
+                   width="640" height="360" loading="lazy" decoding="async"
+                   class="w-100pc h-180px of-cover bdb-1px-solid-he4e4e7" />
+            </a>
+            <div class="p-1d5rem d-flex fd-column flex-1">
+              <div class="d-flex gap-d5rem ai-center fs-d75rem c-h71717a mb-d6rem">
+                <span class="fw-700 c-h2563eb tt-uppercase ls-d05em">Laravel</span>
+                <span aria-hidden="true">&bull;</span>
+                <time datetime="2026-08-11">11 August 2026</time>
+                <span aria-hidden="true">&bull;</span>
+                <span>9 min read</span>
+              </div>
+              <h2 class="fs-1d125rem fw-800 c-h09090b lh-1d35 mb-d5rem">
+                <a href="https://ajdmjakiur.com/blog/laravel-saas-multi-tenancy-guide/" class="c-inherit td-none">How to Build a Multi-Tenant SaaS with Laravel</a>
+              </h2>
+              <p class="fs-d9rem c-h52525b lh-1d65 mb-1rem flex-1">The two multi-tenancy models in Laravel — single database vs database-per-tenant — explained with trade-offs, tooling (Filament, Stripe), and how to choose for your SaaS.</p>
+              <a href="https://ajdmjakiur.com/blog/laravel-saas-multi-tenancy-guide/" class="d-inline-flex ai-center gap-d375rem fs-d875rem fw-600 c-h2563eb td-none">Read article →</a>
+            </div>
+          </article>
+                    <article class="card reveal  d-flex fd-column p-0 ov-hidden">
+            <a href="https://ajdmjakiur.com/blog/zero-downtime-deployment-docker-github-actions/" class="d-block td-none c-inherit">
+              <img src="https://ajdmjakiur.com/assets/images/ajdm-jakiur-rahman.jpg" alt="Zero-downtime deployment with Docker and GitHub Actions by AJDM Jakiur Rahman"
+                   width="640" height="360" loading="lazy" decoding="async"
+                   class="w-100pc h-180px of-cover bdb-1px-solid-he4e4e7" />
+            </a>
+            <div class="p-1d5rem d-flex fd-column flex-1">
+              <div class="d-flex gap-d5rem ai-center fs-d75rem c-h71717a mb-d6rem">
+                <span class="fw-700 c-h2563eb tt-uppercase ls-d05em">DevOps</span>
+                <span aria-hidden="true">&bull;</span>
+                <time datetime="2026-08-10">10 August 2026</time>
+                <span aria-hidden="true">&bull;</span>
+                <span>8 min read</span>
+              </div>
+              <h2 class="fs-1d125rem fw-800 c-h09090b lh-1d35 mb-d5rem">
+                <a href="https://ajdmjakiur.com/blog/zero-downtime-deployment-docker-github-actions/" class="c-inherit td-none">Zero-Downtime Deployment with Docker & GitHub Actions</a>
+              </h2>
+              <p class="fs-d9rem c-h52525b lh-1d65 mb-1rem flex-1">How to ship code with no downtime using Docker, GitHub Actions, and health-checked blue-green deploys — the CI/CD setup that cuts deploys from hours to minutes.</p>
+              <a href="https://ajdmjakiur.com/blog/zero-downtime-deployment-docker-github-actions/" class="d-inline-flex ai-center gap-d375rem fs-d875rem fw-600 c-h2563eb td-none">Read article →</a>
+            </div>
+          </article>
+                    <article class="card reveal reveal-d1 d-flex fd-column p-0 ov-hidden">
+            <a href="https://ajdmjakiur.com/blog/custom-wordpress-plugin-development-guide/" class="d-block td-none c-inherit">
+              <img src="https://ajdmjakiur.com/assets/images/ajdm-jakiur-rahman.jpg" alt="Custom WordPress plugin development by AJDM Jakiur Rahman"
+                   width="640" height="360" loading="lazy" decoding="async"
+                   class="w-100pc h-180px of-cover bdb-1px-solid-he4e4e7" />
+            </a>
+            <div class="p-1d5rem d-flex fd-column flex-1">
+              <div class="d-flex gap-d5rem ai-center fs-d75rem c-h71717a mb-d6rem">
+                <span class="fw-700 c-h2563eb tt-uppercase ls-d05em">WordPress</span>
+                <span aria-hidden="true">&bull;</span>
+                <time datetime="2026-08-09">9 August 2026</time>
+                <span aria-hidden="true">&bull;</span>
+                <span>8 min read</span>
+              </div>
+              <h2 class="fs-1d125rem fw-800 c-h09090b lh-1d35 mb-d5rem">
+                <a href="https://ajdmjakiur.com/blog/custom-wordpress-plugin-development-guide/" class="c-inherit td-none">Custom WordPress Plugin Development: When You Actually Need One</a>
+              </h2>
+              <p class="fs-d9rem c-h52525b lh-1d65 mb-1rem flex-1">When a custom WordPress plugin beats an off-the-shelf one, what professional plugin development involves, and how to avoid the security and update traps that break sites.</p>
+              <a href="https://ajdmjakiur.com/blog/custom-wordpress-plugin-development-guide/" class="d-inline-flex ai-center gap-d375rem fs-d875rem fw-600 c-h2563eb td-none">Read article →</a>
+            </div>
+          </article>
+                    <article class="card reveal reveal-d2 d-flex fd-column p-0 ov-hidden">
+            <a href="https://ajdmjakiur.com/blog/custom-crm-vs-off-the-shelf/" class="d-block td-none c-inherit">
+              <img src="https://ajdmjakiur.com/assets/images/ajdm-jakiur-rahman.jpg" alt="Custom CRM and ERP development versus off-the-shelf software by AJDM Jakiur Rahman"
+                   width="640" height="360" loading="lazy" decoding="async"
+                   class="w-100pc h-180px of-cover bdb-1px-solid-he4e4e7" />
+            </a>
+            <div class="p-1d5rem d-flex fd-column flex-1">
+              <div class="d-flex gap-d5rem ai-center fs-d75rem c-h71717a mb-d6rem">
+                <span class="fw-700 c-h2563eb tt-uppercase ls-d05em">CRM/ERP</span>
+                <span aria-hidden="true">&bull;</span>
+                <time datetime="2026-08-08">8 August 2026</time>
+                <span aria-hidden="true">&bull;</span>
+                <span>8 min read</span>
+              </div>
+              <h2 class="fs-1d125rem fw-800 c-h09090b lh-1d35 mb-d5rem">
+                <a href="https://ajdmjakiur.com/blog/custom-crm-vs-off-the-shelf/" class="c-inherit td-none">Custom CRM vs Off-the-Shelf: What Your Business Should Choose</a>
+              </h2>
+              <p class="fs-d9rem c-h52525b lh-1d65 mb-1rem flex-1">A clear framework for deciding between a custom CRM/ERP and a subscription tool like Salesforce or Zoho — total cost, fit, ownership, and when each one wins.</p>
+              <a href="https://ajdmjakiur.com/blog/custom-crm-vs-off-the-shelf/" class="d-inline-flex ai-center gap-d375rem fs-d875rem fw-600 c-h2563eb td-none">Read article →</a>
+            </div>
+          </article>
+                    <article class="card reveal  d-flex fd-column p-0 ov-hidden">
+            <a href="https://ajdmjakiur.com/blog/native-vs-cross-platform-android/" class="d-block td-none c-inherit">
+              <img src="https://ajdmjakiur.com/assets/images/ajdm-jakiur-rahman.jpg" alt="Native Android versus cross-platform mobile development by AJDM Jakiur Rahman"
+                   width="640" height="360" loading="lazy" decoding="async"
+                   class="w-100pc h-180px of-cover bdb-1px-solid-he4e4e7" />
+            </a>
+            <div class="p-1d5rem d-flex fd-column flex-1">
+              <div class="d-flex gap-d5rem ai-center fs-d75rem c-h71717a mb-d6rem">
+                <span class="fw-700 c-h2563eb tt-uppercase ls-d05em">Android</span>
+                <span aria-hidden="true">&bull;</span>
+                <time datetime="2026-08-07">7 August 2026</time>
+                <span aria-hidden="true">&bull;</span>
+                <span>7 min read</span>
+              </div>
+              <h2 class="fs-1d125rem fw-800 c-h09090b lh-1d35 mb-d5rem">
+                <a href="https://ajdmjakiur.com/blog/native-vs-cross-platform-android/" class="c-inherit td-none">Native Android vs Cross-Platform: How to Choose for Your App</a>
+              </h2>
+              <p class="fs-d9rem c-h52525b lh-1d65 mb-1rem flex-1">Native Kotlin vs Flutter/React Native for your business app — the real trade-offs in performance, cost, team, and maintenance, and a simple rule for choosing.</p>
+              <a href="https://ajdmjakiur.com/blog/native-vs-cross-platform-android/" class="d-inline-flex ai-center gap-d375rem fs-d875rem fw-600 c-h2563eb td-none">Read article →</a>
+            </div>
+          </article>
+                    <article class="card reveal reveal-d1 d-flex fd-column p-0 ov-hidden">
+            <a href="https://ajdmjakiur.com/blog/cost-to-build-a-saas-2026/" class="d-block td-none c-inherit">
+              <img src="https://ajdmjakiur.com/assets/images/ajdm-jakiur-rahman.jpg" alt="How much it costs to build a SaaS in 2026 by AJDM Jakiur Rahman"
+                   width="640" height="360" loading="lazy" decoding="async"
+                   class="w-100pc h-180px of-cover bdb-1px-solid-he4e4e7" />
+            </a>
+            <div class="p-1d5rem d-flex fd-column flex-1">
+              <div class="d-flex gap-d5rem ai-center fs-d75rem c-h71717a mb-d6rem">
+                <span class="fw-700 c-h2563eb tt-uppercase ls-d05em">SaaS</span>
+                <span aria-hidden="true">&bull;</span>
+                <time datetime="2026-08-06">6 August 2026</time>
+                <span aria-hidden="true">&bull;</span>
+                <span>8 min read</span>
+              </div>
+              <h2 class="fs-1d125rem fw-800 c-h09090b lh-1d35 mb-d5rem">
+                <a href="https://ajdmjakiur.com/blog/cost-to-build-a-saas-2026/" class="c-inherit td-none">How Much Does It Cost to Build a SaaS in 2026?</a>
+              </h2>
+              <p class="fs-d9rem c-h52525b lh-1d65 mb-1rem flex-1">What actually drives the cost of building a SaaS product in 2026 — MVP vs full build, the real cost breakdown, and how to launch for less without cutting the wrong corners.</p>
+              <a href="https://ajdmjakiur.com/blog/cost-to-build-a-saas-2026/" class="d-inline-flex ai-center gap-d375rem fs-d875rem fw-600 c-h2563eb td-none">Read article →</a>
+            </div>
+          </article>
+                  </div>
+        
+                <div class="mt-3d5rem pt-2rem bdt-1px-solid-he4e4e7">
+          <p class="section-label">Browse by Topic</p>
+          <div class="d-flex fw2-wrap gap-d5rem mt-1rem">
+                        <span class="tech-pill">Bangladesh <span class="op-d55">(8)</span></span>
+                        <span class="tech-pill">Laravel <span class="op-d55">(4)</span></span>
+                        <span class="tech-pill">DevOps <span class="op-d55">(2)</span></span>
+                        <span class="tech-pill">SaaS <span class="op-d55">(2)</span></span>
+                        <span class="tech-pill">Android <span class="op-d55">(1)</span></span>
+                        <span class="tech-pill">Automation <span class="op-d55">(1)</span></span>
+                        <span class="tech-pill">CI/CD <span class="op-d55">(1)</span></span>
+                        <span class="tech-pill">CRM <span class="op-d55">(1)</span></span>
+                        <span class="tech-pill">Data Extraction <span class="op-d55">(1)</span></span>
+                        <span class="tech-pill">Docker <span class="op-d55">(1)</span></span>
+                        <span class="tech-pill">ERP <span class="op-d55">(1)</span></span>
+                        <span class="tech-pill">Filament <span class="op-d55">(1)</span></span>
+                        <span class="tech-pill">GitHub Actions <span class="op-d55">(1)</span></span>
+                        <span class="tech-pill">Hiring <span class="op-d55">(1)</span></span>
+                        <span class="tech-pill">Kotlin <span class="op-d55">(1)</span></span>
+                        <span class="tech-pill">Lunova Digital <span class="op-d55">(1)</span></span>
+                        <span class="tech-pill">Mobile Development <span class="op-d55">(1)</span></span>
+                        <span class="tech-pill">Multi-Tenancy <span class="op-d55">(1)</span></span>
+                        <span class="tech-pill">Playwright <span class="op-d55">(1)</span></span>
+                        <span class="tech-pill">Plugin Development <span class="op-d55">(1)</span></span>
+                        <span class="tech-pill">Python <span class="op-d55">(1)</span></span>
+                        <span class="tech-pill">Scrapy <span class="op-d55">(1)</span></span>
+                        <span class="tech-pill">Software Engineering <span class="op-d55">(1)</span></span>
+                        <span class="tech-pill">Startup <span class="op-d55">(1)</span></span>
+                        <span class="tech-pill">Web Developer <span class="op-d55">(1)</span></span>
+                        <span class="tech-pill">Web Scraping <span class="op-d55">(1)</span></span>
+                        <span class="tech-pill">WooCommerce <span class="op-d55">(1)</span></span>
+                        <span class="tech-pill">WordPress <span class="op-d55">(1)</span></span>
+                      </div>
+        </div>
+              </div>
+    </section>
+
+    <section class="section section-white" aria-label="Contact call to action">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <h2 class="fs-clamp1d75rem_3d5vw_2d5rem fw-900 c-hfff mb-d75rem">Have a project like the ones I write about?</h2>
+          <p class="fs-1rem c-rgba255_255_255_d75 mb-2rem mw-34rem ml-auto mr-auto">Laravel, WordPress, SaaS, DevOps, or Python automation — describe it on WhatsApp. Response within 24 hours.</p>
+          <div class="d-flex fw2-wrap gap-1rem jc-center">
+            <a href="https://wa.me/8801406618808?text=Hi%20Jakiur%2C%20I%20read%20your%20blog%20and%20want%20to%20discuss%20a%20project" target="_blank" rel="noopener noreferrer" class="btn bg-h25d366 c-hfff fs-1rem">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>              Discuss on WhatsApp
+            </a>
+            <a href="/services/" class="btn btn-ghost-white">View Services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo ai-flex-start gap-1rem mb-1rem">
+            <img src="/assets/images/ajdm-jakiur-rahman.jpg"
+                 alt="AJDM Jakiur Rahman"
+                 width="56" height="56"
+                 loading="lazy"
+                 decoding="async"
+                 class="w-56px h-56px br-50pc of-cover object-center-top bd-2px-solid-rgba255_255_255_d2 fsh-0" />
+            <div>
+              <span class="d-block fw-700 c-hfff fs-d9375rem lh-1d3">AJDM Jakiur Rahman</span>
+              <span class="d-block fs-d75rem c-rgba255_255_255_d45 mt-d2rem">Founder &amp; CEO, Lunova Digital</span>
+            </div>
+          </div>
+          <p class="footer-desc">Full-Stack Developer, DevOps Engineer &amp; Founder of Lunova Digital. Building scalable digital products for clients worldwide from Dhaka, Bangladesh.</p>
+          <div class="footer-socials">
+            <a href="https://wa.me/8801406618808?text=Hi%20Jakiur%2C%20I%20want%20to%20discuss%20a%20project" target="_blank" rel="noopener noreferrer"
+               class="footer-social-btn" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+            <a href="https://www.linkedin.com/in/jakiur-rahmam/" target="_blank" rel="noopener noreferrer"
+               class="footer-social-btn" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+            <a href="https://github.com/ajdm-jakiur" target="_blank" rel="noopener noreferrer"
+               class="footer-social-btn" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg></a>
+            <a href="https://www.fiverr.com/ajdm_jakiur/" target="_blank" rel="noopener noreferrer"
+               class="footer-social-btn" aria-label="Fiverr"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5 2h14a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3zm9.5 3.5a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5zM9.5 9a2.5 2.5 0 0 0-2.5 2.5v.5H6a.75.75 0 0 0 0 1.5h1v5a.75.75 0 0 0 1.5 0v-5h2a.75.75 0 0 0 0-1.5h-2v-.5c0-.552.448-1 1-1h1a.75.75 0 0 0 0-1.5h-1zm4.25 3.25a.75.75 0 0 0-.75.75v5.25a.75.75 0 0 0 1.5 0V13a.75.75 0 0 0-.75-.75z"/></svg></a>
+            <a href="https://www.upwork.com/freelancers/~01e151beed0e454d4d" target="_blank" rel="noopener noreferrer"
+               class="footer-social-btn" aria-label="Upwork"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.561 13.158c-1.102 0-2.135-.467-3.074-1.227l.228-1.076.008-.042c.207-1.143.849-3.06 2.839-3.06 1.492 0 2.703 1.212 2.703 2.703-.001 1.489-1.212 2.702-2.704 2.702zm0-8.14c-2.539 0-4.51 1.649-5.31 4.366-1.22-1.834-2.148-4.036-2.687-5.892H7.828v7.112c-.002 1.406-1.141 2.546-2.547 2.546-1.405 0-2.543-1.14-2.545-2.546V3.492H0v7.112c0 2.914 2.37 5.303 5.281 5.303 2.913 0 5.283-2.389 5.283-5.303v-1.19c.529 1.107 1.182 2.229 1.974 3.221l-1.673 7.873h2.797l1.213-5.71c1.063.679 2.285 1.109 3.686 1.109 3 0 5.439-2.452 5.439-5.45 0-3-2.439-5.452-5.439-5.452z"/></svg></a>
+            <a href="https://lunovadigital.net" target="_blank" rel="noopener noreferrer"
+               class="footer-social-btn" aria-label="Lunova Digital"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></a>
+          </div>
+        </div>
+        <nav aria-label="Footer pages">
+          <p class="footer-heading">Pages</p>
+          <ul class="footer-links" role="list">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about/">About Jakiur</a></li>
+            <li><a href="/services/">Services</a></li>
+            <li><a href="/projects/">Projects</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/contact/">Contact / Hire</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Footer services">
+          <p class="footer-heading">Services</p>
+          <ul class="footer-links" role="list">
+            <li><a href="/services/laravel-development/">Laravel Development</a></li>
+            <li><a href="/services/wordpress-plugin-development/">WordPress Plugin Dev</a></li>
+            <li><a href="/services/devops-cloud-engineering/">DevOps &amp; CI/CD</a></li>
+            <li><a href="/services/android-app-development/">Android App Dev</a></li>
+            <li><a href="/services/saas-development/">SaaS Development</a></li>
+            <li><a href="/services/custom-crm-erp-development/">CRM &amp; ERP</a></li>
+            <li><a href="/services/python-automation-web-scraping/">Python Automation</a></li>
+          </ul>
+        </nav>
+        <div>
+          <p class="footer-heading">Contact</p>
+          <ul class="footer-links" role="list">
+            <li><a href="https://wa.me/8801406618808?text=Hi%20Jakiur%2C%20I%20want%20to%20discuss%20a%20project" target="_blank" rel="noopener noreferrer">WhatsApp: +8801406618808</a></li>
+            <li><a href="mailto:hello@lunovadigital.net">hello@lunovadigital.net</a></li>
+            <li><a href="https://lunovadigital.net" target="_blank" rel="noopener noreferrer">lunovadigital.net</a></li>
+            <li class="c-rgba255_255_255_d4 fs-d875rem">Dhaka, Bangladesh</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; <span id="copy-year">2026</span> <a href="https://ajdmjakiur.com">AJDM Jakiur Rahman</a>.
+          Founder of <a href="https://lunovadigital.net" target="_blank" rel="noopener noreferrer">Lunova Digital</a>.
+          All rights reserved. | <a href="/privacy-policy/">Privacy Policy</a> &bull; <a href="/terms/">Terms</a></p>
+        <p class="footer-keywords">Laravel Developer &bull; WordPress Expert &bull; DevOps Engineer &bull; Android Developer &bull; Dhaka, Bangladesh</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/8801406618808?text=Hi%20Jakiur%2C%20I%20want%20to%20discuss%20a%20project" target="_blank" rel="noopener noreferrer"
+     class="wa-float" aria-label="Contact AJDM Jakiur Rahman on WhatsApp">
+    <span class="wa-float-pulse"></span>
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>    <span class="wa-label fs-d875rem">Chat with Jakiur</span>
+  </a>
+
+  <script src="/js/main.js" defer></script>
+</body>
+</html>
