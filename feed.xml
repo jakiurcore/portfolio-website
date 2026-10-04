@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AJDM Jakiur Rahman — Engineering Blog</title>
+    <link>https://ajdmjakiur.com/blog/</link>
+    <atom:link href="https://ajdmjakiur.com/feed.xml" rel="self" type="application/rss+xml" />
+    <description>Practical articles on Laravel, WordPress, DevOps, Python web scraping, SaaS, and CRM/ERP by AJDM Jakiur Rahman, founder of Lunova Digital.</description>
+    <language>en</language>
+    <lastBuildDate>Thu, 13 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Web Scraping Services in Bangladesh: A Practical Guide for 2026</title>
+      <link>https://ajdmjakiur.com/blog/web-scraping-services-bangladesh/</link>
+      <guid isPermaLink="true">https://ajdmjakiur.com/blog/web-scraping-services-bangladesh/</guid>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
+      <category>Python Automation</category>
+      <description>How professional web scraping actually works in Bangladesh — legal boundaries, the right tools (Scrapy, Playwright), anti-bot handling, and how to hire a reliable scraping engineer.</description>
+    </item>
+    <item>
+      <title>How to Hire the Best Software Engineer in Bangladesh (2026)</title>
+      <link>https://ajdmjakiur.com/blog/hire-best-software-engineer-bangladesh/</link>
+      <guid isPermaLink="true">https://ajdmjakiur.com/blog/hire-best-software-engineer-bangladesh/</guid>
+      <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
+      <category>Engineering</category>
+      <description>A practical framework for hiring a senior software engineer or development agency in Bangladesh — what to check, red flags to avoid, and why full-spectrum delivery beats a team of specialists.</description>
+    </item>
+    <item>
+      <title>How to Build a Multi-Tenant SaaS with Laravel</title>
+      <link>https://ajdmjakiur.com/blog/laravel-saas-multi-tenancy-guide/</link>
+      <guid isPermaLink="true">https://ajdmjakiur.com/blog/laravel-saas-multi-tenancy-guide/</guid>
+      <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
+      <category>Laravel</category>
+      <description>The two multi-tenancy models in Laravel — single database vs database-per-tenant — explained with trade-offs, tooling (Filament, Stripe), and how to choose for your SaaS.</description>
+    </item>
+    <item>
+      <title>Zero-Downtime Deployment with Docker &amp; GitHub Actions</title>
+      <link>https://ajdmjakiur.com/blog/zero-downtime-deployment-docker-github-actions/</link>
+      <guid isPermaLink="true">https://ajdmjakiur.com/blog/zero-downtime-deployment-docker-github-actions/</guid>
+      <pubDate>Mon, 10 Aug 2026 00:00:00 +0000</pubDate>
+      <category>DevOps</category>
+      <description>How to ship code with no downtime using Docker, GitHub Actions, and health-checked blue-green deploys — the CI/CD setup that cuts deploys from hours to minutes.</description>
+    </item>
+    <item>
+      <title>Custom WordPress Plugin Development: When You Actually Need One</title>
+      <link>https://ajdmjakiur.com/blog/custom-wordpress-plugin-development-guide/</link>
+      <guid isPermaLink="true">https://ajdmjakiur.com/blog/custom-wordpress-plugin-development-guide/</guid>
+      <pubDate>Sun, 09 Aug 2026 00:00:00 +0000</pubDate>
+      <category>WordPress</category>
+      <description>When a custom WordPress plugin beats an off-the-shelf one, what professional plugin development involves, and how to avoid the security and update traps that break sites.</description>
+    </item>
+    <item>
+      <title>Custom CRM vs Off-the-Shelf: What Your Business Should Choose</title>
+      <link>https://ajdmjakiur.com/blog/custom-crm-vs-off-the-shelf/</link>
+      <guid isPermaLink="true">https://ajdmjakiur.com/blog/custom-crm-vs-off-the-shelf/</guid>
+      <pubDate>Sat, 08 Aug 2026 00:00:00 +0000</pubDate>
+      <category>CRM/ERP</category>
+      <description>A clear framework for deciding between a custom CRM/ERP and a subscription tool like Salesforce or Zoho — total cost, fit, ownership, and when each one wins.</description>
+    </item>
+    <item>
+      <title>Native Android vs Cross-Platform: How to Choose for Your App</title>
+      <link>https://ajdmjakiur.com/blog/native-vs-cross-platform-android/</link>
+      <guid isPermaLink="true">https://ajdmjakiur.com/blog/native-vs-cross-platform-android/</guid>
+      <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
+      <category>Android</category>
+      <description>Native Kotlin vs Flutter/React Native for your business app — the real trade-offs in performance, cost, team, and maintenance, and a simple rule for choosing.</description>
+    </item>
+    <item>
+      <title>How Much Does It Cost to Build a SaaS in 2026?</title>
+      <link>https://ajdmjakiur.com/blog/cost-to-build-a-saas-2026/</link>
+      <guid isPermaLink="true">https://ajdmjakiur.com/blog/cost-to-build-a-saas-2026/</guid>
+      <pubDate>Thu, 06 Aug 2026 00:00:00 +0000</pubDate>
+      <category>SaaS</category>
+      <description>What actually drives the cost of building a SaaS product in 2026 — MVP vs full build, the real cost breakdown, and how to launch for less without cutting the wrong corners.</description>
+    </item>
+  </channel>
+</rss>
