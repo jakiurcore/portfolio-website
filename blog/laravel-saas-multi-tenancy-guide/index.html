@@ -42,6 +42,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/css/style.css" />
   <link rel="alternate" type="application/rss+xml" title="AJDM Jakiur Rahman — Blog" href="/feed.xml" />
 
@@ -133,12 +134,12 @@
   <header id="navbar" role="banner">
     <div class="container nav-inner">
       <a href="/" class="nav-logo" aria-label="AJDM Jakiur Rahman — Home">
-        <img src="/assets/images/ajdm-jakiur-rahman.jpg"
+        <picture><source srcset="/assets/images/ajdm-jakiur-rahman-240.webp" type="image/webp" /><img src="/assets/images/ajdm-jakiur-rahman.jpg"
              alt="AJDM Jakiur Rahman"
              width="34" height="34"
              class="nav-logo-photo"
              loading="eager"
-             decoding="async" />
+             decoding="async" /></picture>
         <span>AJDM Jakiur Rahman</span>
       </a>
       <nav aria-label="Primary navigation">
@@ -175,7 +176,7 @@
   <main id="main">
 
     <article>
-    <header class="page-hero section section-dark" aria-labelledby="post-h1">
+    <header class="page-hero section hero-blue post-hero" aria-labelledby="post-h1">
       <div class="container pos-relative z-1 mw-820px">
         <nav aria-label="Breadcrumb" class="breadcrumb">
           <ol role="list" class="d-flex gap-d5rem lst-none p-0 m-0-0-1d5rem fw2-wrap">
@@ -198,15 +199,31 @@
       </div>
     </header>
 
+    <figure class="post-cover">
+      <img src="/assets/images/blog/laravel-saas-multi-tenancy-guide.jpg" alt="Data center server racks representing multi-tenant SaaS infrastructure" width="1200" height="799" fetchpriority="high" decoding="async" />
+    </figure>
+
     <div class="section section-white">
       <div class="container mw-760px">
         <div class="blog-body">
           <p class="lead">A multi-tenant SaaS lets many customers ("tenants") share one application while keeping their data separate. In Laravel you choose between two models — a single shared database or a database per tenant — and that one decision shapes cost, complexity, and how far you can scale.</p>
+          <nav class="toc" aria-labelledby="toc-heading">
+            <p class="toc-heading" id="toc-heading">In this article</p>
+            <ol>
+              <li><a href="#what-multi-tenant-actually-means">What "multi-tenant" actually means</a></li>
+              <li><a href="#model-1-single-database-shared-tables">Model 1 — Single database, shared tables</a></li>
+              <li><a href="#model-2-database-per-tenant">Model 2 — Database per tenant</a></li>
+              <li><a href="#the-rest-of-the-saas-stack">The rest of the SaaS stack</a></li>
+              <li><a href="#how-to-choose-a-quick-rule">How to choose — a quick rule</a></li>
+              <li><a href="#build-it-right-the-first-time">Build it right the first time</a></li>
+            </ol>
+          </nav>
 
-<h2>What "multi-tenant" actually means</h2>
+
+<h2 id="what-multi-tenant-actually-means">What "multi-tenant" actually means</h2>
 <p>Every customer logs into the same app at the same URL (or their own subdomain), but each only ever sees their own data. Slack, Shopify, and every "sign up and get your own workspace" product works this way. The engineering challenge is isolation: making it impossible for Tenant A to ever touch Tenant B's records.</p>
 
-<h2>Model 1 — Single database, shared tables</h2>
+<h2 id="model-1-single-database-shared-tables">Model 1 — Single database, shared tables</h2>
 <p>Every table gets a <code>tenant_id</code> column, and a global query scope automatically filters every query to the current tenant. This is the right default for most SaaS products.</p>
 <ul>
   <li><strong>Pros</strong> — cheapest to run, one migration to maintain, trivial cross-tenant analytics, scales to thousands of tenants.</li>
@@ -222,7 +239,7 @@ protected static function booted(): void
     });
 }</code></pre>
 
-<h2>Model 2 — Database per tenant</h2>
+<h2 id="model-2-database-per-tenant">Model 2 — Database per tenant</h2>
 <p>Each tenant gets its own database; the app switches the connection at runtime based on the current tenant. Packages like <code>stancl/tenancy</code> automate this.</p>
 <ul>
   <li><strong>Pros</strong> — hard isolation, per-tenant backup/restore, easier compliance for regulated data.</li>
@@ -230,7 +247,7 @@ protected static function booted(): void
 </ul>
 <p>Choose this only when a real requirement forces it. For 90% of products, Model 1 wins.</p>
 
-<h2>The rest of the SaaS stack</h2>
+<h2 id="the-rest-of-the-saas-stack">The rest of the SaaS stack</h2>
 <h3>Admin panel — Filament</h3>
 <p><strong>Filament</strong> gives you a production admin panel fast: resources, role-based permissions, and its own multi-tenancy support for per-tenant dashboards. It is my default for SaaS back-office and CRM screens.</p>
 <h3>Billing — Laravel Cashier + Stripe</h3>
@@ -238,19 +255,19 @@ protected static function booted(): void
 <h3>Background work — queues</h3>
 <p>Email, exports, and third-party calls belong in queued jobs (Redis + Horizon), never in the request cycle. This keeps the app fast as tenants grow.</p>
 
-<h2>How to choose — a quick rule</h2>
+<h2 id="how-to-choose-a-quick-rule">How to choose — a quick rule</h2>
 <p>Start with a single shared database and a rock-solid tenant scope. Move to database-per-tenant only when a specific client's compliance or isolation requirement demands it. Premature isolation is one of the most common ways SaaS projects burn their budget before launch.</p>
 
-<h2>Build it right the first time</h2>
+<h2 id="build-it-right-the-first-time">Build it right the first time</h2>
 <p>Multi-tenancy is cheap to design in on day one and painful to retrofit later. If you're planning a SaaS, this is exactly what I build end-to-end — see <a href="/services/saas-development/">SaaS development</a> and <a href="/services/laravel-development/">Laravel development</a>, or read <a href="/blog/hire-best-software-engineer-bangladesh/">how to hire the right engineer</a>. Ready to start? <a href="/contact/">Message me on WhatsApp</a> for a fixed quote within 24 hours.</p>        </div>
 
                 <div class="d-flex fw2-wrap gap-d5rem mt-2d5rem pt-1d5rem bdt-1px-solid-he4e4e7">
           <span class="tech-pill">Laravel</span><span class="tech-pill">SaaS</span><span class="tech-pill">Multi-Tenancy</span><span class="tech-pill">Filament</span><span class="tech-pill">Bangladesh</span>        </div>
         
         <!-- Author box: reinforces E-E-A-T + Person entity on every article -->
-        <aside class="d-flex gap-1d25rem ai-flex-start mt-2d5rem p-1d5rem bg-hf4f4f5 bd-1px-solid-he4e4e7 br-1rem">
-          <img src="/assets/images/ajdm-jakiur-rahman.jpg" alt="AJDM Jakiur Rahman" width="64" height="64" loading="lazy" decoding="async"
-               class="w-64px h-64px br-50pc of-cover object-center-top bd-2px-solid-h2563eb fsh-0" />
+        <aside class="author-box">
+          <picture><source srcset="/assets/images/ajdm-jakiur-rahman-240.webp" type="image/webp" /><img src="/assets/images/ajdm-jakiur-rahman.jpg" alt="AJDM Jakiur Rahman" width="64" height="64" loading="lazy" decoding="async"
+               class="w-64px h-64px br-50pc of-cover object-center-top bd-2px-solid-h2563eb fsh-0" /></picture>
           <div>
             <p class="fw-800 c-h09090b mb-d2rem">AJDM Jakiur Rahman</p>
             <p class="fs-d8125rem c-h52525b mb-d5rem">Full-Stack Developer, DevOps Engineer &amp; Founder of <a href="https://lunovadigital.net" target="_blank" rel="noopener noreferrer">Lunova Digital</a> — Dhaka, Bangladesh.</p>
@@ -325,12 +342,12 @@ protected static function booted(): void
       <div class="footer-grid">
         <div>
           <div class="footer-logo ai-flex-start gap-1rem mb-1rem">
-            <img src="/assets/images/ajdm-jakiur-rahman.jpg"
+            <picture><source srcset="/assets/images/ajdm-jakiur-rahman-240.webp" type="image/webp" /><img src="/assets/images/ajdm-jakiur-rahman.jpg"
                  alt="AJDM Jakiur Rahman"
                  width="56" height="56"
                  loading="lazy"
                  decoding="async"
-                 class="w-56px h-56px br-50pc of-cover object-center-top bd-2px-solid-rgba255_255_255_d2 fsh-0" />
+                 class="w-56px h-56px br-50pc of-cover object-center-top bd-2px-solid-rgba255_255_255_d2 fsh-0" /></picture>
             <div>
               <span class="d-block fw-700 c-hfff fs-d9375rem lh-1d3">AJDM Jakiur Rahman</span>
               <span class="d-block fs-d75rem c-rgba255_255_255_d45 mt-d2rem">Founder &amp; CEO, Lunova Digital</span>
@@ -377,12 +394,12 @@ protected static function booted(): void
         </nav>
         <div>
           <p class="footer-heading">Contact</p>
-          <ul class="footer-links" role="list">
+          <address><ul class="footer-links" role="list">
             <li><a href="https://wa.me/8801406618808?text=Hi%20Jakiur%2C%20I%20want%20to%20discuss%20a%20project" target="_blank" rel="noopener noreferrer">WhatsApp: +8801406618808</a></li>
             <li><a href="mailto:ceo@lunovadigital.net">ceo@lunovadigital.net</a></li>
             <li><a href="https://lunovadigital.net" target="_blank" rel="noopener noreferrer">lunovadigital.net</a></li>
             <li class="c-rgba255_255_255_d4 fs-d875rem">Dhaka, Bangladesh</li>
-          </ul>
+          </ul></address>
         </div>
       </div>
       <div class="footer-bottom">

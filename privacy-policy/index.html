@@ -41,6 +41,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/css/style.css" />
   <link rel="alternate" type="application/rss+xml" title="AJDM Jakiur Rahman — Blog" href="/feed.xml" />
 
@@ -51,12 +52,12 @@
   <header id="navbar" role="banner">
     <div class="container nav-inner">
       <a href="/" class="nav-logo" aria-label="AJDM Jakiur Rahman — Home">
-        <img src="/assets/images/ajdm-jakiur-rahman.jpg"
+        <picture><source srcset="/assets/images/ajdm-jakiur-rahman-240.webp" type="image/webp" /><img src="/assets/images/ajdm-jakiur-rahman.jpg"
              alt="AJDM Jakiur Rahman"
              width="34" height="34"
              class="nav-logo-photo"
              loading="eager"
-             decoding="async" />
+             decoding="async" /></picture>
         <span>AJDM Jakiur Rahman</span>
       </a>
       <nav aria-label="Primary navigation">
@@ -94,7 +95,11 @@
     <section class="page-hero section-light bdb-1px-solid-he4e4e7">
       <div class="container">
         <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="/">Home</a><span class="sep">/</span><span class="current" aria-current="page">Privacy Policy</span>
+          <ol role="list">
+            <li><a href="/">Home</a></li>
+            <li aria-hidden="true" class="sep">/</li>
+            <li class="current" aria-current="page">Privacy Policy</li>
+          </ol>
         </nav>
         <h1 class="fs-clamp1d75rem_4vw_2d75rem fw-900 c-h09090b mb-d75rem">Privacy Policy</h1>
         <p class="c-h71717a fs-d9375rem">Last updated: May 2026</p>
@@ -118,12 +123,12 @@
       <div class="footer-grid">
         <div>
           <div class="footer-logo ai-flex-start gap-1rem mb-1rem">
-            <img src="/assets/images/ajdm-jakiur-rahman.jpg"
+            <picture><source srcset="/assets/images/ajdm-jakiur-rahman-240.webp" type="image/webp" /><img src="/assets/images/ajdm-jakiur-rahman.jpg"
                  alt="AJDM Jakiur Rahman"
                  width="56" height="56"
                  loading="lazy"
                  decoding="async"
-                 class="w-56px h-56px br-50pc of-cover object-center-top bd-2px-solid-rgba255_255_255_d2 fsh-0" />
+                 class="w-56px h-56px br-50pc of-cover object-center-top bd-2px-solid-rgba255_255_255_d2 fsh-0" /></picture>
             <div>
               <span class="d-block fw-700 c-hfff fs-d9375rem lh-1d3">AJDM Jakiur Rahman</span>
               <span class="d-block fs-d75rem c-rgba255_255_255_d45 mt-d2rem">Founder &amp; CEO, Lunova Digital</span>
@@ -170,12 +175,12 @@
         </nav>
         <div>
           <p class="footer-heading">Contact</p>
-          <ul class="footer-links" role="list">
+          <address><ul class="footer-links" role="list">
             <li><a href="https://wa.me/8801406618808?text=Hi%20Jakiur%2C%20I%20want%20to%20discuss%20a%20project" target="_blank" rel="noopener noreferrer">WhatsApp: +8801406618808</a></li>
             <li><a href="mailto:ceo@lunovadigital.net">ceo@lunovadigital.net</a></li>
             <li><a href="https://lunovadigital.net" target="_blank" rel="noopener noreferrer">lunovadigital.net</a></li>
             <li class="c-rgba255_255_255_d4 fs-d875rem">Dhaka, Bangladesh</li>
-          </ul>
+          </ul></address>
         </div>
       </div>
       <div class="footer-bottom">

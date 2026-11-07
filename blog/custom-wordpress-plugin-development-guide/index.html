@@ -42,6 +42,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/css/style.css" />
   <link rel="alternate" type="application/rss+xml" title="AJDM Jakiur Rahman — Blog" href="/feed.xml" />
 
@@ -133,12 +134,12 @@
   <header id="navbar" role="banner">
     <div class="container nav-inner">
       <a href="/" class="nav-logo" aria-label="AJDM Jakiur Rahman — Home">
-        <img src="/assets/images/ajdm-jakiur-rahman.jpg"
+        <picture><source srcset="/assets/images/ajdm-jakiur-rahman-240.webp" type="image/webp" /><img src="/assets/images/ajdm-jakiur-rahman.jpg"
              alt="AJDM Jakiur Rahman"
              width="34" height="34"
              class="nav-logo-photo"
              loading="eager"
-             decoding="async" />
+             decoding="async" /></picture>
         <span>AJDM Jakiur Rahman</span>
       </a>
       <nav aria-label="Primary navigation">
@@ -175,7 +176,7 @@
   <main id="main">
 
     <article>
-    <header class="page-hero section section-dark" aria-labelledby="post-h1">
+    <header class="page-hero section hero-blue post-hero" aria-labelledby="post-h1">
       <div class="container pos-relative z-1 mw-820px">
         <nav aria-label="Breadcrumb" class="breadcrumb">
           <ol role="list" class="d-flex gap-d5rem lst-none p-0 m-0-0-1d5rem fw2-wrap">
@@ -198,18 +199,34 @@
       </div>
     </header>
 
+    <figure class="post-cover">
+      <img src="/assets/images/blog/custom-wordpress-plugin-development-guide.jpg" alt="Close-up of code on a computer screen during WordPress plugin development" width="1200" height="800" fetchpriority="high" decoding="async" />
+    </figure>
+
     <div class="section section-white">
       <div class="container mw-760px">
         <div class="blog-body">
           <p class="lead">Build a custom WordPress plugin when no existing one does exactly what you need, when you're chaining several plugins together to fake one feature, or when you need a private integration with your own system. For common, well-solved problems, an off-the-shelf plugin is the smarter choice.</p>
+          <nav class="toc" aria-labelledby="toc-heading">
+            <p class="toc-heading" id="toc-heading">In this article</p>
+            <ol>
+              <li><a href="#the-hidden-cost-of-just-install-another-plugin">The hidden cost of "just install another plugin"</a></li>
+              <li><a href="#when-off-the-shelf-is-the-right-call">When off-the-shelf is the right call</a></li>
+              <li><a href="#when-custom-is-worth-it">When custom is worth it</a></li>
+              <li><a href="#what-professional-plugin-development-involves">What professional plugin development involves</a></li>
+              <li><a href="#a-quick-decision-guide">A quick decision guide</a></li>
+              <li><a href="#build-it-properly">Build it properly</a></li>
+            </ol>
+          </nav>
 
-<h2>The hidden cost of "just install another plugin"</h2>
+
+<h2 id="the-hidden-cost-of-just-install-another-plugin">The hidden cost of "just install another plugin"</h2>
 <p>Every plugin you add is more code loading on every page, another security surface, and another thing that can break on update. Sites running 30+ plugins to cover gaps are slow, fragile, and expensive to maintain. Often a single focused custom plugin replaces five bolted-together ones — and runs faster.</p>
 
-<h2>When off-the-shelf is the right call</h2>
+<h2 id="when-off-the-shelf-is-the-right-call">When off-the-shelf is the right call</h2>
 <p>Don't reinvent solved problems. For SEO, caching, contact forms, backups, and standard WooCommerce features, mature plugins are battle-tested and maintained. Custom development earns its cost only when your need is genuinely specific.</p>
 
-<h2>When custom is worth it</h2>
+<h2 id="when-custom-is-worth-it">When custom is worth it</h2>
 <ul>
   <li><strong>A unique business process</strong> — a booking, pricing, or approval flow no generic plugin models.</li>
   <li><strong>An integration with your own systems</strong> — syncing WordPress/WooCommerce with your ERP, CRM, or a SaaS backend.</li>
@@ -217,7 +234,7 @@
   <li><strong>Replacing plugin sprawl</strong> — consolidating several overlapping plugins into one lean, maintained package.</li>
 </ul>
 
-<h2>What professional plugin development involves</h2>
+<h2 id="what-professional-plugin-development-involves">What professional plugin development involves</h2>
 <h3>WordPress standards, not hacks</h3>
 <p>A durable plugin uses the official hooks, actions, and filters — never edits core, never relies on undocumented behaviour. That's what keeps it working across WordPress and PHP upgrades.</p>
 <h3>Security built in</h3>
@@ -227,19 +244,19 @@
 <h3>Licensing for commercial plugins</h3>
 <p>Selling a plugin means license keys, activation limits, and secure automatic updates from your own server — a small system in itself.</p>
 
-<h2>A quick decision guide</h2>
+<h2 id="a-quick-decision-guide">A quick decision guide</h2>
 <p>Ask: does a well-maintained plugin already do 90% of this? If yes, buy it. If you're installing several plugins to approximate one feature, or the feature is core to your business and unique, build custom. The goal is always fewer, better-maintained moving parts.</p>
 
-<h2>Build it properly</h2>
+<h2 id="build-it-properly">Build it properly</h2>
 <p>With years of commercial plugin experience — including plugins sold globally — this is work I deliver to standard. See <a href="/services/wordpress-plugin-development/">WordPress plugin development</a>, or if your plugin talks to a larger system, <a href="/services/laravel-development/">Laravel</a> and <a href="/services/custom-crm-erp-development/">CRM/ERP</a> integration. <a href="/contact/">Message me on WhatsApp</a> for a fixed quote within 24 hours.</p>        </div>
 
                 <div class="d-flex fw2-wrap gap-d5rem mt-2d5rem pt-1d5rem bdt-1px-solid-he4e4e7">
           <span class="tech-pill">WordPress</span><span class="tech-pill">Plugin Development</span><span class="tech-pill">WooCommerce</span><span class="tech-pill">Bangladesh</span>        </div>
         
         <!-- Author box: reinforces E-E-A-T + Person entity on every article -->
-        <aside class="d-flex gap-1d25rem ai-flex-start mt-2d5rem p-1d5rem bg-hf4f4f5 bd-1px-solid-he4e4e7 br-1rem">
-          <img src="/assets/images/ajdm-jakiur-rahman.jpg" alt="AJDM Jakiur Rahman" width="64" height="64" loading="lazy" decoding="async"
-               class="w-64px h-64px br-50pc of-cover object-center-top bd-2px-solid-h2563eb fsh-0" />
+        <aside class="author-box">
+          <picture><source srcset="/assets/images/ajdm-jakiur-rahman-240.webp" type="image/webp" /><img src="/assets/images/ajdm-jakiur-rahman.jpg" alt="AJDM Jakiur Rahman" width="64" height="64" loading="lazy" decoding="async"
+               class="w-64px h-64px br-50pc of-cover object-center-top bd-2px-solid-h2563eb fsh-0" /></picture>
           <div>
             <p class="fw-800 c-h09090b mb-d2rem">AJDM Jakiur Rahman</p>
             <p class="fs-d8125rem c-h52525b mb-d5rem">Full-Stack Developer, DevOps Engineer &amp; Founder of <a href="https://lunovadigital.net" target="_blank" rel="noopener noreferrer">Lunova Digital</a> — Dhaka, Bangladesh.</p>
@@ -314,12 +331,12 @@
       <div class="footer-grid">
         <div>
           <div class="footer-logo ai-flex-start gap-1rem mb-1rem">
-            <img src="/assets/images/ajdm-jakiur-rahman.jpg"
+            <picture><source srcset="/assets/images/ajdm-jakiur-rahman-240.webp" type="image/webp" /><img src="/assets/images/ajdm-jakiur-rahman.jpg"
                  alt="AJDM Jakiur Rahman"
                  width="56" height="56"
                  loading="lazy"
                  decoding="async"
-                 class="w-56px h-56px br-50pc of-cover object-center-top bd-2px-solid-rgba255_255_255_d2 fsh-0" />
+                 class="w-56px h-56px br-50pc of-cover object-center-top bd-2px-solid-rgba255_255_255_d2 fsh-0" /></picture>
             <div>
               <span class="d-block fw-700 c-hfff fs-d9375rem lh-1d3">AJDM Jakiur Rahman</span>
               <span class="d-block fs-d75rem c-rgba255_255_255_d45 mt-d2rem">Founder &amp; CEO, Lunova Digital</span>
@@ -366,12 +383,12 @@
         </nav>
         <div>
           <p class="footer-heading">Contact</p>
-          <ul class="footer-links" role="list">
+          <address><ul class="footer-links" role="list">
             <li><a href="https://wa.me/8801406618808?text=Hi%20Jakiur%2C%20I%20want%20to%20discuss%20a%20project" target="_blank" rel="noopener noreferrer">WhatsApp: +8801406618808</a></li>
             <li><a href="mailto:ceo@lunovadigital.net">ceo@lunovadigital.net</a></li>
             <li><a href="https://lunovadigital.net" target="_blank" rel="noopener noreferrer">lunovadigital.net</a></li>
             <li class="c-rgba255_255_255_d4 fs-d875rem">Dhaka, Bangladesh</li>
-          </ul>
+          </ul></address>
         </div>
       </div>
       <div class="footer-bottom">

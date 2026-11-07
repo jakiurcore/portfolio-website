@@ -85,6 +85,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/css/style.css" />
   <link rel="alternate" type="application/rss+xml" title="AJDM Jakiur Rahman — Blog" href="/feed.xml" />
 
@@ -137,12 +138,12 @@
   <header id="navbar" role="banner">
     <div class="container nav-inner">
       <a href="/" class="nav-logo" aria-label="AJDM Jakiur Rahman — Home">
-        <img src="/assets/images/ajdm-jakiur-rahman.jpg"
+        <picture><source srcset="/assets/images/ajdm-jakiur-rahman-240.webp" type="image/webp" /><img src="/assets/images/ajdm-jakiur-rahman.jpg"
              alt="AJDM Jakiur Rahman"
              width="34" height="34"
              class="nav-logo-photo"
              loading="eager"
-             decoding="async" />
+             decoding="async" /></picture>
         <span>AJDM Jakiur Rahman</span>
       </a>
       <nav aria-label="Primary navigation">
@@ -179,7 +180,7 @@
   <main id="main">
 
     <article>
-    <header class="page-hero section section-dark" aria-labelledby="post-h1">
+    <header class="page-hero section hero-blue post-hero" aria-labelledby="post-h1">
       <div class="container pos-relative z-1 mw-820px">
         <nav aria-label="Breadcrumb" class="breadcrumb">
           <ol role="list" class="d-flex gap-d5rem lst-none p-0 m-0-0-1d5rem fw2-wrap">
@@ -202,16 +203,28 @@
       </div>
     </header>
 
+    <figure class="post-cover">
+      <img src="/assets/images/blog/{{slug}}.jpg" alt="{{DESCRIPTIVE ALT — same as og:image:alt}}" width="1200" height="675" fetchpriority="high" decoding="async" />
+    </figure>
+
     <div class="section section-white">
       <div class="container mw-760px">
         <div class="blog-body">
           <p class="lead">{{OPENING PARAGRAPH — summarize the whole article in 2-3 sentences, this gets the .lead styling}}</p>
+          <nav class="toc" aria-labelledby="toc-heading">
+            <p class="toc-heading" id="toc-heading">In this article</p>
+            <ol>
+              <li><a href="#section-heading">{{Section heading}}</a></li>
+              <li><a href="#another-section-heading">{{Another section heading}}</a></li>
+            </ol>
+          </nav>
+
 
           <!-- ARTICLE BODY — replace with your real content -->
-          <h2>{{Section heading}}</h2>
+          <h2 id="section-heading">{{Section heading}}</h2>
           <p>{{Paragraph text. Use &lt;a href="/services/..."&gt; or &lt;a href="/blog/other-slug/"&gt; to link to other real pages on the site.}}</p>
 
-          <h2>{{Another section heading}}</h2>
+          <h2 id="another-section-heading">{{Another section heading}}</h2>
           <ul>
             <li><strong>{{Point}}</strong> — {{explanation}}.</li>
           </ul>
@@ -223,9 +236,9 @@
         </div>
 
         <!-- Author box: reinforces E-E-A-T + Person entity on every article -->
-        <aside class="d-flex gap-1d25rem ai-flex-start mt-2d5rem p-1d5rem bg-hf4f4f5 bd-1px-solid-he4e4e7 br-1rem">
-          <img src="/assets/images/ajdm-jakiur-rahman.jpg" alt="AJDM Jakiur Rahman" width="64" height="64" loading="lazy" decoding="async"
-               class="w-64px h-64px br-50pc of-cover object-center-top bd-2px-solid-h2563eb fsh-0" />
+        <aside class="author-box">
+          <picture><source srcset="/assets/images/ajdm-jakiur-rahman-240.webp" type="image/webp" /><img src="/assets/images/ajdm-jakiur-rahman.jpg" alt="AJDM Jakiur Rahman" width="64" height="64" loading="lazy" decoding="async"
+               class="w-64px h-64px br-50pc of-cover object-center-top bd-2px-solid-h2563eb fsh-0" /></picture>
           <div>
             <p class="fw-800 c-h09090b mb-d2rem">AJDM Jakiur Rahman</p>
             <p class="fs-d8125rem c-h52525b mb-d5rem">Full-Stack Developer, DevOps Engineer &amp; Founder of <a href="https://lunovadigital.net" target="_blank" rel="noopener noreferrer">Lunova Digital</a> — Dhaka, Bangladesh.</p>
@@ -279,12 +292,12 @@
       <div class="footer-grid">
         <div>
           <div class="footer-logo ai-flex-start gap-1rem mb-1rem">
-            <img src="/assets/images/ajdm-jakiur-rahman.jpg"
+            <picture><source srcset="/assets/images/ajdm-jakiur-rahman-240.webp" type="image/webp" /><img src="/assets/images/ajdm-jakiur-rahman.jpg"
                  alt="AJDM Jakiur Rahman"
                  width="56" height="56"
                  loading="lazy"
                  decoding="async"
-                 class="w-56px h-56px br-50pc of-cover object-center-top bd-2px-solid-rgba255_255_255_d2 fsh-0" />
+                 class="w-56px h-56px br-50pc of-cover object-center-top bd-2px-solid-rgba255_255_255_d2 fsh-0" /></picture>
             <div>
               <span class="d-block fw-700 c-hfff fs-d9375rem lh-1d3">AJDM Jakiur Rahman</span>
               <span class="d-block fs-d75rem c-rgba255_255_255_d45 mt-d2rem">Founder &amp; CEO, Lunova Digital</span>
@@ -331,12 +344,12 @@
         </nav>
         <div>
           <p class="footer-heading">Contact</p>
-          <ul class="footer-links" role="list">
+          <address><ul class="footer-links" role="list">
             <li><a href="https://wa.me/8801406618808?text=Hi%20Jakiur%2C%20I%20want%20to%20discuss%20a%20project" target="_blank" rel="noopener noreferrer">WhatsApp: +8801406618808</a></li>
             <li><a href="mailto:ceo@lunovadigital.net">ceo@lunovadigital.net</a></li>
             <li><a href="https://lunovadigital.net" target="_blank" rel="noopener noreferrer">lunovadigital.net</a></li>
             <li class="c-rgba255_255_255_d4 fs-d875rem">Dhaka, Bangladesh</li>
-          </ul>
+          </ul></address>
         </div>
       </div>
       <div class="footer-bottom">

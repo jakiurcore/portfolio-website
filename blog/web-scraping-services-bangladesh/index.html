@@ -42,6 +42,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/css/style.css" />
   <link rel="alternate" type="application/rss+xml" title="AJDM Jakiur Rahman — Blog" href="/feed.xml" />
 
@@ -133,12 +134,12 @@
   <header id="navbar" role="banner">
     <div class="container nav-inner">
       <a href="/" class="nav-logo" aria-label="AJDM Jakiur Rahman — Home">
-        <img src="/assets/images/ajdm-jakiur-rahman.jpg"
+        <picture><source srcset="/assets/images/ajdm-jakiur-rahman-240.webp" type="image/webp" /><img src="/assets/images/ajdm-jakiur-rahman.jpg"
              alt="AJDM Jakiur Rahman"
              width="34" height="34"
              class="nav-logo-photo"
              loading="eager"
-             decoding="async" />
+             decoding="async" /></picture>
         <span>AJDM Jakiur Rahman</span>
       </a>
       <nav aria-label="Primary navigation">
@@ -175,7 +176,7 @@
   <main id="main">
 
     <article>
-    <header class="page-hero section section-dark" aria-labelledby="post-h1">
+    <header class="page-hero section hero-blue post-hero" aria-labelledby="post-h1">
       <div class="container pos-relative z-1 mw-820px">
         <nav aria-label="Breadcrumb" class="breadcrumb">
           <ol role="list" class="d-flex gap-d5rem lst-none p-0 m-0-0-1d5rem fw2-wrap">
@@ -198,12 +199,27 @@
       </div>
     </header>
 
+    <figure class="post-cover">
+      <img src="/assets/images/blog/web-scraping-services-bangladesh.jpg" alt="A developer coding on multiple monitors in a dark room for a data scraping project" width="1200" height="800" fetchpriority="high" decoding="async" />
+    </figure>
+
     <div class="section section-white">
       <div class="container mw-760px">
         <div class="blog-body">
           <p class="lead">Bangladesh has become one of the strongest hubs for Python data-extraction work — and the demand from local businesses, agencies, and international clients keeps growing. This guide explains how professional web scraping is actually delivered: the legal boundaries, the tools that hold up in production, and what separates a reliable scraping engineer from a script that breaks after a week.</p>
+          <nav class="toc" aria-labelledby="toc-heading">
+            <p class="toc-heading" id="toc-heading">In this article</p>
+            <ol>
+              <li><a href="#what-web-scraping-is-really-used-for">What web scraping is really used for</a></li>
+              <li><a href="#the-legal-and-ethical-line">The legal and ethical line</a></li>
+              <li><a href="#the-tools-that-hold-up-in-production">The tools that hold up in production</a></li>
+              <li><a href="#what-production-grade-actually-means">What &ldquo;production-grade&rdquo; actually means</a></li>
+              <li><a href="#how-to-hire-a-reliable-scraping-engineer">How to hire a reliable scraping engineer</a></li>
+            </ol>
+          </nav>
 
-<h2>What web scraping is really used for</h2>
+
+<h2 id="what-web-scraping-is-really-used-for">What web scraping is really used for</h2>
 <p>Most people think of scraping as &ldquo;copying a website.&rdquo; In practice, it is structured data extraction that feeds a business decision. The projects that come up most often in Bangladesh are:</p>
 <ul>
   <li><strong>Price and competitor monitoring</strong> — e-commerce stores tracking rival pricing across Daraz, marketplaces, and brand sites.</li>
@@ -213,7 +229,7 @@
   <li><strong>Content and SEO monitoring</strong> — tracking keyword rankings, reviews, and catalogue changes over time.</li>
 </ul>
 
-<h2>The legal and ethical line</h2>
+<h2 id="the-legal-and-ethical-line">The legal and ethical line</h2>
 <p>This is the part most cheap providers skip, and it is the part that protects your business. Scraping <strong>publicly accessible</strong> data is broadly acceptable, but a professional engagement stays inside clear limits:</p>
 <ul>
   <li>No scraping behind a login without explicit permission.</li>
@@ -223,7 +239,7 @@
 </ul>
 <p>Every project should start with written scope: which sources, which fields, how often, and where the data lands. That single document prevents almost every dispute.</p>
 
-<h2>The tools that hold up in production</h2>
+<h2 id="the-tools-that-hold-up-in-production">The tools that hold up in production</h2>
 <p>Tooling choice is where amateurs and professionals separate. For a maintainable pipeline the stack is usually:</p>
 <h3>Scrapy — for scale</h3>
 <p>When you need to crawl thousands or millions of pages, <strong>Scrapy</strong> is the backbone: built-in concurrency, retries, item pipelines, and export to JSON, CSV, or a database. It is the difference between a script and a system.</p>
@@ -255,7 +271,7 @@ class ProductSpider(scrapy.Spider):
         if next_page:
             yield response.follow(next_page, self.parse)</code></pre>
 
-<h2>What &ldquo;production-grade&rdquo; actually means</h2>
+<h2 id="what-production-grade-actually-means">What &ldquo;production-grade&rdquo; actually means</h2>
 <p>A one-off script that runs on your laptop is not a service. A production scraping pipeline includes:</p>
 <ul>
   <li><strong>Scheduling</strong> — Celery or cron so data refreshes automatically.</li>
@@ -265,7 +281,7 @@ class ProductSpider(scrapy.Spider):
 </ul>
 <p>This is exactly the kind of <a href="/services/python-automation-web-scraping/">Python automation and web scraping</a> work I deliver — from a single dataset to a scheduled, monitored pipeline that runs for years.</p>
 
-<h2>How to hire a reliable scraping engineer</h2>
+<h2 id="how-to-hire-a-reliable-scraping-engineer">How to hire a reliable scraping engineer</h2>
 <p>Ask three questions before you hire anyone for a scraping project:</p>
 <ol>
   <li><strong>How will you handle the site changing its HTML?</strong> — the honest answer is monitoring plus maintenance, not &ldquo;it won&rsquo;t.&rdquo;</li>
@@ -278,9 +294,9 @@ class ProductSpider(scrapy.Spider):
           <span class="tech-pill">Web Scraping</span><span class="tech-pill">Python</span><span class="tech-pill">Scrapy</span><span class="tech-pill">Playwright</span><span class="tech-pill">Data Extraction</span><span class="tech-pill">Bangladesh</span><span class="tech-pill">Automation</span>        </div>
         
         <!-- Author box: reinforces E-E-A-T + Person entity on every article -->
-        <aside class="d-flex gap-1d25rem ai-flex-start mt-2d5rem p-1d5rem bg-hf4f4f5 bd-1px-solid-he4e4e7 br-1rem">
-          <img src="/assets/images/ajdm-jakiur-rahman.jpg" alt="AJDM Jakiur Rahman" width="64" height="64" loading="lazy" decoding="async"
-               class="w-64px h-64px br-50pc of-cover object-center-top bd-2px-solid-h2563eb fsh-0" />
+        <aside class="author-box">
+          <picture><source srcset="/assets/images/ajdm-jakiur-rahman-240.webp" type="image/webp" /><img src="/assets/images/ajdm-jakiur-rahman.jpg" alt="AJDM Jakiur Rahman" width="64" height="64" loading="lazy" decoding="async"
+               class="w-64px h-64px br-50pc of-cover object-center-top bd-2px-solid-h2563eb fsh-0" /></picture>
           <div>
             <p class="fw-800 c-h09090b mb-d2rem">AJDM Jakiur Rahman</p>
             <p class="fs-d8125rem c-h52525b mb-d5rem">Full-Stack Developer, DevOps Engineer &amp; Founder of <a href="https://lunovadigital.net" target="_blank" rel="noopener noreferrer">Lunova Digital</a> — Dhaka, Bangladesh.</p>
@@ -355,12 +371,12 @@ class ProductSpider(scrapy.Spider):
       <div class="footer-grid">
         <div>
           <div class="footer-logo ai-flex-start gap-1rem mb-1rem">
-            <img src="/assets/images/ajdm-jakiur-rahman.jpg"
+            <picture><source srcset="/assets/images/ajdm-jakiur-rahman-240.webp" type="image/webp" /><img src="/assets/images/ajdm-jakiur-rahman.jpg"
                  alt="AJDM Jakiur Rahman"
                  width="56" height="56"
                  loading="lazy"
                  decoding="async"
-                 class="w-56px h-56px br-50pc of-cover object-center-top bd-2px-solid-rgba255_255_255_d2 fsh-0" />
+                 class="w-56px h-56px br-50pc of-cover object-center-top bd-2px-solid-rgba255_255_255_d2 fsh-0" /></picture>
             <div>
               <span class="d-block fw-700 c-hfff fs-d9375rem lh-1d3">AJDM Jakiur Rahman</span>
               <span class="d-block fs-d75rem c-rgba255_255_255_d45 mt-d2rem">Founder &amp; CEO, Lunova Digital</span>
@@ -407,12 +423,12 @@ class ProductSpider(scrapy.Spider):
         </nav>
         <div>
           <p class="footer-heading">Contact</p>
-          <ul class="footer-links" role="list">
+          <address><ul class="footer-links" role="list">
             <li><a href="https://wa.me/8801406618808?text=Hi%20Jakiur%2C%20I%20want%20to%20discuss%20a%20project" target="_blank" rel="noopener noreferrer">WhatsApp: +8801406618808</a></li>
             <li><a href="mailto:ceo@lunovadigital.net">ceo@lunovadigital.net</a></li>
             <li><a href="https://lunovadigital.net" target="_blank" rel="noopener noreferrer">lunovadigital.net</a></li>
             <li class="c-rgba255_255_255_d4 fs-d875rem">Dhaka, Bangladesh</li>
-          </ul>
+          </ul></address>
         </div>
       </div>
       <div class="footer-bottom">

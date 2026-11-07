@@ -41,6 +41,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="/assets/images/ajdm-jakiur-rahman.webp" type="image/webp" />
   <link rel="stylesheet" href="/css/style.css" />
   <link rel="alternate" type="application/rss+xml" title="AJDM Jakiur Rahman — Blog" href="/feed.xml" />
 
@@ -177,12 +179,12 @@
   <header id="navbar" role="banner">
     <div class="container nav-inner">
       <a href="/" class="nav-logo" aria-label="AJDM Jakiur Rahman — Home">
-        <img src="/assets/images/ajdm-jakiur-rahman.jpg"
+        <picture><source srcset="/assets/images/ajdm-jakiur-rahman-240.webp" type="image/webp" /><img src="/assets/images/ajdm-jakiur-rahman.jpg"
              alt="AJDM Jakiur Rahman"
              width="34" height="34"
              class="nav-logo-photo"
              loading="eager"
-             decoding="async" />
+             decoding="async" /></picture>
         <span>AJDM Jakiur Rahman</span>
       </a>
       <nav aria-label="Primary navigation">
@@ -221,6 +223,8 @@
     <!-- HERO -->
     <section class="page-hero section section-dark" aria-labelledby="about-h1">
       <div class="container pos-relative z-1">
+        <div class="two-col">
+          <div class="two-col-main">
         <nav aria-label="Breadcrumb" class="breadcrumb">
           <ol role="list" class="d-flex gap-d5rem lst-none p-0 m-0-0-1d5rem fw2-wrap">
             <li><a href="/" class="c-rgba255_255_255_d5">Home</a></li>
@@ -231,6 +235,19 @@
         <p class="section-label">Who is AJDM Jakiur Rahman?</p>
         <h1 id="about-h1" class="section-title c-hfff">About AJDM Jakiur Rahman</h1>
         <p class="section-desc c-rgba255_255_255_d75 mw-680px">Full-Stack Developer, DevOps Engineer, and Founder of <a href="https://lunovadigital.net" target="_blank" rel="noopener noreferrer" class="c-h93c5fd fw-600">Lunova Digital</a> — based in Dhaka, Bangladesh and serving clients across 15+ countries.</p>
+          </div>
+          <div class="two-col-side">
+            <picture>
+              <source srcset="/assets/images/ajdm-jakiur-rahman.webp" type="image/webp" />
+              <picture><source srcset="/assets/images/ajdm-jakiur-rahman.webp" type="image/webp" /><img src="/assets/images/ajdm-jakiur-rahman.jpg"
+                   alt="AJDM Jakiur Rahman — Full-Stack Developer and Founder of Lunova Digital"
+                   width="900" height="1125"
+                   class="about-hero-photo"
+                   fetchpriority="high"
+                   decoding="async" /></picture>
+            </picture>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -325,12 +342,12 @@
 
             <!-- Profile photo — displayed in bio section -->
             <div class="reveal d-flex ai-center gap-1d5rem m-1d75rem-0-1d5rem">
-              <img src="/assets/images/ajdm-jakiur-rahman.jpg"
+              <picture><source srcset="/assets/images/ajdm-jakiur-rahman-240.webp" type="image/webp" /><img src="/assets/images/ajdm-jakiur-rahman.jpg"
                    alt="AJDM Jakiur Rahman — Full-Stack Developer and Founder of Lunova Digital"
                    width="120" height="120"
                    loading="lazy"
                    decoding="async"
-                   class="w-120px h-120px br-50pc of-cover object-center-top bd-3px-solid-h2563eb fsh-0 bs-0-4px-20px-rgba37_99_235_d2" />
+                   class="w-120px h-120px br-50pc of-cover object-center-top bd-3px-solid-h2563eb fsh-0 bs-0-4px-20px-rgba37_99_235_d2" /></picture>
               <div>
                 <p class="fw-700 c-h09090b fs-1rem mb-d25rem">AJDM Jakiur Rahman</p>
                 <p class="fs-d875rem c-h52525b mb-d375rem">Full-Stack Developer &amp; DevOps Engineer</p>
@@ -411,7 +428,7 @@
     </section>
 
     <!-- TECHNICAL EXPERTISE -->
-    <section class="section section-dark" aria-labelledby="tech-heading">
+    <section class="section section-blue" aria-labelledby="tech-heading">
       <div class="container">
         <p class="section-label reveal c-h93c5fd">Technical Expertise</p>
         <h2 id="tech-heading" class="section-title reveal reveal-d1 c-hfff">Full-Spectrum Engineering Stack</h2>
@@ -552,12 +569,12 @@
       <div class="footer-grid">
         <div>
           <div class="footer-logo ai-flex-start gap-1rem mb-1rem">
-            <img src="/assets/images/ajdm-jakiur-rahman.jpg"
+            <picture><source srcset="/assets/images/ajdm-jakiur-rahman-240.webp" type="image/webp" /><img src="/assets/images/ajdm-jakiur-rahman.jpg"
                  alt="AJDM Jakiur Rahman"
                  width="56" height="56"
                  loading="lazy"
                  decoding="async"
-                 class="w-56px h-56px br-50pc of-cover object-center-top bd-2px-solid-rgba255_255_255_d2 fsh-0" />
+                 class="w-56px h-56px br-50pc of-cover object-center-top bd-2px-solid-rgba255_255_255_d2 fsh-0" /></picture>
             <div>
               <span class="d-block fw-700 c-hfff fs-d9375rem lh-1d3">AJDM Jakiur Rahman</span>
               <span class="d-block fs-d75rem c-rgba255_255_255_d45 mt-d2rem">Founder &amp; CEO, Lunova Digital</span>
@@ -604,12 +621,12 @@
         </nav>
         <div>
           <p class="footer-heading">Contact</p>
-          <ul class="footer-links" role="list">
+          <address><ul class="footer-links" role="list">
             <li><a href="https://wa.me/8801406618808?text=Hi%20Jakiur%2C%20I%20want%20to%20discuss%20a%20project" target="_blank" rel="noopener noreferrer">WhatsApp: +8801406618808</a></li>
             <li><a href="mailto:ceo@lunovadigital.net">ceo@lunovadigital.net</a></li>
             <li><a href="https://lunovadigital.net" target="_blank" rel="noopener noreferrer">lunovadigital.net</a></li>
             <li class="c-rgba255_255_255_d4 fs-d875rem">Dhaka, Bangladesh</li>
-          </ul>
+          </ul></address>
         </div>
       </div>
       <div class="footer-bottom">

@@ -42,6 +42,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/css/style.css" />
   <link rel="alternate" type="application/rss+xml" title="AJDM Jakiur Rahman — Blog" href="/feed.xml" />
 
@@ -133,12 +134,12 @@
   <header id="navbar" role="banner">
     <div class="container nav-inner">
       <a href="/" class="nav-logo" aria-label="AJDM Jakiur Rahman — Home">
-        <img src="/assets/images/ajdm-jakiur-rahman.jpg"
+        <picture><source srcset="/assets/images/ajdm-jakiur-rahman-240.webp" type="image/webp" /><img src="/assets/images/ajdm-jakiur-rahman.jpg"
              alt="AJDM Jakiur Rahman"
              width="34" height="34"
              class="nav-logo-photo"
              loading="eager"
-             decoding="async" />
+             decoding="async" /></picture>
         <span>AJDM Jakiur Rahman</span>
       </a>
       <nav aria-label="Primary navigation">
@@ -175,7 +176,7 @@
   <main id="main">
 
     <article>
-    <header class="page-hero section section-dark" aria-labelledby="post-h1">
+    <header class="page-hero section hero-blue post-hero" aria-labelledby="post-h1">
       <div class="container pos-relative z-1 mw-820px">
         <nav aria-label="Breadcrumb" class="breadcrumb">
           <ol role="list" class="d-flex gap-d5rem lst-none p-0 m-0-0-1d5rem fw2-wrap">
@@ -198,15 +199,30 @@
       </div>
     </header>
 
+    <figure class="post-cover">
+      <img src="/assets/images/blog/cost-to-build-a-saas-2026.jpg" alt="A team collaborating around a laptop while planning a SaaS product budget" width="1200" height="675" fetchpriority="high" decoding="async" />
+    </figure>
+
     <div class="section section-white">
       <div class="container mw-760px">
         <div class="blog-body">
           <p class="lead">The cost of building a SaaS in 2026 is driven almost entirely by one thing: how many features you insist on at launch. A lean MVP — login, your one core feature, and billing — is dramatically cheaper than a full platform, because scope is the price. The smartest way to control budget is to cut scope, never quality.</p>
+          <nav class="toc" aria-labelledby="toc-heading">
+            <p class="toc-heading" id="toc-heading">In this article</p>
+            <ol>
+              <li><a href="#the-cost-is-scope-not-code">The cost is scope, not code</a></li>
+              <li><a href="#where-the-money-actually-goes">Where the money actually goes</a></li>
+              <li><a href="#mvp-first-always">MVP first — always</a></li>
+              <li><a href="#how-to-launch-for-less-without-cutting-the-wrong-corners">How to launch for less without cutting the wrong corners</a></li>
+              <li><a href="#get-a-real-number-for-your-idea">Get a real number for your idea</a></li>
+            </ol>
+          </nav>
 
-<h2>The cost is scope, not code</h2>
+
+<h2 id="the-cost-is-scope-not-code">The cost is scope, not code</h2>
 <p>Founders often ask for a single number, but "a SaaS" can mean a two-week MVP or a nine-month platform. Every feature adds design, build, testing, and maintenance time — and they compound. Two SaaS products using the identical tech stack can differ 10x in cost purely because of feature count.</p>
 
-<h2>Where the money actually goes</h2>
+<h2 id="where-the-money-actually-goes">Where the money actually goes</h2>
 <ul>
   <li><strong>Features</strong> — the single biggest driver. Each module is build + test + maintain, forever.</li>
   <li><strong>Integrations</strong> — payment gateways, email, third-party APIs; each is real work and ongoing upkeep.</li>
@@ -215,11 +231,11 @@
   <li><strong>Infrastructure</strong> — hosting, monitoring, and backups; modest at launch, growing with users.</li>
 </ul>
 
-<h2>MVP first — always</h2>
+<h2 id="mvp-first-always">MVP first — always</h2>
 <p>The goal of a first release is to prove people want it, not to be complete. A good MVP ships the smallest thing that delivers real value: authentication, the one feature that is your reason to exist, and subscription billing. Everything else waits for real user feedback — which almost always changes your roadmap anyway.</p>
 <p>Building the full vision before a single customer has paid is the most common way SaaS budgets are wasted.</p>
 
-<h2>How to launch for less without cutting the wrong corners</h2>
+<h2 id="how-to-launch-for-less-without-cutting-the-wrong-corners">How to launch for less without cutting the wrong corners</h2>
 <ul>
   <li><strong>Ruthlessly cut launch scope</strong> — defer every "nice to have" to version two.</li>
   <li><strong>Use proven building blocks</strong> — <a href="/services/laravel-development/">Laravel</a> with Cashier for billing and Filament for the admin panel avoids reinventing solved problems. See <a href="/blog/laravel-saas-multi-tenancy-guide/">the multi-tenancy guide</a>.</li>
@@ -227,16 +243,16 @@
   <li><strong>One engineer who does it all</strong> — a full-stack developer who also handles <a href="/services/devops-cloud-engineering/">DevOps</a> removes the coordination tax of a large team on an MVP.</li>
 </ul>
 
-<h2>Get a real number for your idea</h2>
+<h2 id="get-a-real-number-for-your-idea">Get a real number for your idea</h2>
 <p>The honest way to price a SaaS is to look at your actual feature list, not a generic estimate. I build <a href="/services/saas-development/">SaaS platforms</a> end-to-end — from MVP to scale, billing and deployment included. Send me your feature list and I'll give you a fixed, transparent quote within 24 hours. <a href="/contact/">Message me on WhatsApp</a> to start, or read <a href="/blog/hire-best-software-engineer-bangladesh/">how to hire the right engineer</a> first.</p>        </div>
 
                 <div class="d-flex fw2-wrap gap-d5rem mt-2d5rem pt-1d5rem bdt-1px-solid-he4e4e7">
           <span class="tech-pill">SaaS</span><span class="tech-pill">Laravel</span><span class="tech-pill">Startup</span><span class="tech-pill">Bangladesh</span>        </div>
         
         <!-- Author box: reinforces E-E-A-T + Person entity on every article -->
-        <aside class="d-flex gap-1d25rem ai-flex-start mt-2d5rem p-1d5rem bg-hf4f4f5 bd-1px-solid-he4e4e7 br-1rem">
-          <img src="/assets/images/ajdm-jakiur-rahman.jpg" alt="AJDM Jakiur Rahman" width="64" height="64" loading="lazy" decoding="async"
-               class="w-64px h-64px br-50pc of-cover object-center-top bd-2px-solid-h2563eb fsh-0" />
+        <aside class="author-box">
+          <picture><source srcset="/assets/images/ajdm-jakiur-rahman-240.webp" type="image/webp" /><img src="/assets/images/ajdm-jakiur-rahman.jpg" alt="AJDM Jakiur Rahman" width="64" height="64" loading="lazy" decoding="async"
+               class="w-64px h-64px br-50pc of-cover object-center-top bd-2px-solid-h2563eb fsh-0" /></picture>
           <div>
             <p class="fw-800 c-h09090b mb-d2rem">AJDM Jakiur Rahman</p>
             <p class="fs-d8125rem c-h52525b mb-d5rem">Full-Stack Developer, DevOps Engineer &amp; Founder of <a href="https://lunovadigital.net" target="_blank" rel="noopener noreferrer">Lunova Digital</a> — Dhaka, Bangladesh.</p>
@@ -311,12 +327,12 @@
       <div class="footer-grid">
         <div>
           <div class="footer-logo ai-flex-start gap-1rem mb-1rem">
-            <img src="/assets/images/ajdm-jakiur-rahman.jpg"
+            <picture><source srcset="/assets/images/ajdm-jakiur-rahman-240.webp" type="image/webp" /><img src="/assets/images/ajdm-jakiur-rahman.jpg"
                  alt="AJDM Jakiur Rahman"
                  width="56" height="56"
                  loading="lazy"
                  decoding="async"
-                 class="w-56px h-56px br-50pc of-cover object-center-top bd-2px-solid-rgba255_255_255_d2 fsh-0" />
+                 class="w-56px h-56px br-50pc of-cover object-center-top bd-2px-solid-rgba255_255_255_d2 fsh-0" /></picture>
             <div>
               <span class="d-block fw-700 c-hfff fs-d9375rem lh-1d3">AJDM Jakiur Rahman</span>
               <span class="d-block fs-d75rem c-rgba255_255_255_d45 mt-d2rem">Founder &amp; CEO, Lunova Digital</span>
@@ -363,12 +379,12 @@
         </nav>
         <div>
           <p class="footer-heading">Contact</p>
-          <ul class="footer-links" role="list">
+          <address><ul class="footer-links" role="list">
             <li><a href="https://wa.me/8801406618808?text=Hi%20Jakiur%2C%20I%20want%20to%20discuss%20a%20project" target="_blank" rel="noopener noreferrer">WhatsApp: +8801406618808</a></li>
             <li><a href="mailto:ceo@lunovadigital.net">ceo@lunovadigital.net</a></li>
             <li><a href="https://lunovadigital.net" target="_blank" rel="noopener noreferrer">lunovadigital.net</a></li>
             <li class="c-rgba255_255_255_d4 fs-d875rem">Dhaka, Bangladesh</li>
-          </ul>
+          </ul></address>
         </div>
       </div>
       <div class="footer-bottom">

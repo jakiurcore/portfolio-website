@@ -42,6 +42,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/css/style.css" />
   <link rel="alternate" type="application/rss+xml" title="AJDM Jakiur Rahman — Blog" href="/feed.xml" />
 
@@ -133,12 +134,12 @@
   <header id="navbar" role="banner">
     <div class="container nav-inner">
       <a href="/" class="nav-logo" aria-label="AJDM Jakiur Rahman — Home">
-        <img src="/assets/images/ajdm-jakiur-rahman.jpg"
+        <picture><source srcset="/assets/images/ajdm-jakiur-rahman-240.webp" type="image/webp" /><img src="/assets/images/ajdm-jakiur-rahman.jpg"
              alt="AJDM Jakiur Rahman"
              width="34" height="34"
              class="nav-logo-photo"
              loading="eager"
-             decoding="async" />
+             decoding="async" /></picture>
         <span>AJDM Jakiur Rahman</span>
       </a>
       <nav aria-label="Primary navigation">
@@ -175,7 +176,7 @@
   <main id="main">
 
     <article>
-    <header class="page-hero section section-dark" aria-labelledby="post-h1">
+    <header class="page-hero section hero-blue post-hero" aria-labelledby="post-h1">
       <div class="container pos-relative z-1 mw-820px">
         <nav aria-label="Breadcrumb" class="breadcrumb">
           <ol role="list" class="d-flex gap-d5rem lst-none p-0 m-0-0-1d5rem fw2-wrap">
@@ -198,15 +199,31 @@
       </div>
     </header>
 
+    <figure class="post-cover">
+      <img src="/assets/images/blog/hire-best-software-engineer-bangladesh.jpg" alt="Two professionals collaborating over a laptop during a software engineer hiring discussion" width="1200" height="675" fetchpriority="high" decoding="async" />
+    </figure>
+
     <div class="section section-white">
       <div class="container mw-760px">
         <div class="blog-body">
           <p class="lead">Bangladesh has world-class engineering talent — but hiring the right person is still hard, because titles are inflated, portfolios are borrowed, and &ldquo;full-stack&rdquo; can mean very different things. This is the framework I&rsquo;d use to hire a software engineer or agency here, written by someone who has been on both sides of that table.</p>
+          <nav class="toc" aria-labelledby="toc-heading">
+            <p class="toc-heading" id="toc-heading">In this article</p>
+            <ol>
+              <li><a href="#first-define-the-problem-not-the-technology">First, define the problem — not the technology</a></li>
+              <li><a href="#what-actually-separates-a-senior-engineer">What actually separates a senior engineer</a></li>
+              <li><a href="#full-spectrum-delivery-beats-a-pile-of-specialists">Full-spectrum delivery beats a pile of specialists</a></li>
+              <li><a href="#red-flags-to-walk-away-from">Red flags to walk away from</a></li>
+              <li><a href="#the-five-questions-to-ask-any-candidate">The five questions to ask any candidate</a></li>
+              <li><a href="#ready-to-hire">Ready to hire?</a></li>
+            </ol>
+          </nav>
 
-<h2>First, define the problem — not the technology</h2>
+
+<h2 id="first-define-the-problem-not-the-technology">First, define the problem — not the technology</h2>
 <p>The most expensive hiring mistakes start with &ldquo;I need a Laravel developer&rdquo; instead of &ldquo;I need a subscription platform that bills customers automatically.&rdquo; Lead with the outcome. A strong engineer will tell you when your assumed tech stack is wrong for the goal — a weak one just does what you asked and ships the wrong thing.</p>
 
-<h2>What actually separates a senior engineer</h2>
+<h2 id="what-actually-separates-a-senior-engineer">What actually separates a senior engineer</h2>
 <p>Years of experience matter less than what those years contained. Look for:</p>
 <ul>
   <li><strong>A documented promotion path.</strong> Someone who went from Developer to Senior to Team Lead was trusted with more responsibility over time — that is a real signal.</li>
@@ -215,11 +232,11 @@
   <li><strong>Clear communication.</strong> Async-first, written updates, honest timelines. This matters more than raw skill on a remote engagement.</li>
 </ul>
 
-<h2>Full-spectrum delivery beats a pile of specialists</h2>
+<h2 id="full-spectrum-delivery-beats-a-pile-of-specialists">Full-spectrum delivery beats a pile of specialists</h2>
 <p>For most small and mid-sized projects, hiring five specialists — a backend dev, a DevOps person, a mobile dev, an automation engineer, a project manager — creates a coordination tax that eats your budget and your timeline. One engineer who covers the full spectrum removes that tax entirely.</p>
 <p>That is the model behind <a href="https://lunovadigital.net" target="_blank" rel="noopener noreferrer">Lunova Digital</a>: <a href="/services/laravel-development/">Laravel</a> and <a href="/services/saas-development/">SaaS</a> backends, <a href="/services/wordpress-plugin-development/">WordPress plugins</a>, <a href="/services/android-app-development/">Android apps</a>, <a href="/services/python-automation-web-scraping/">Python automation</a>, and <a href="/services/custom-crm-erp-development/">CRM/ERP systems</a> delivered end-to-end, from database schema to production deployment, by the same engineer.</p>
 
-<h2>Red flags to walk away from</h2>
+<h2 id="red-flags-to-walk-away-from">Red flags to walk away from</h2>
 <ul>
   <li><strong>A portfolio with no technical detail.</strong> Screenshots prove nothing. Ask what problem was solved and how.</li>
   <li><strong>No mention of maintenance.</strong> Software is never &ldquo;done.&rdquo; If nobody talks about upkeep, you&rsquo;ll be abandoned after launch.</li>
@@ -227,7 +244,7 @@
   <li><strong>Overpromising timelines.</strong> An honest &ldquo;this takes six weeks&rdquo; beats a hopeful &ldquo;two weeks&rdquo; that slips to three months.</li>
 </ul>
 
-<h2>The five questions to ask any candidate</h2>
+<h2 id="the-five-questions-to-ask-any-candidate">The five questions to ask any candidate</h2>
 <ol>
   <li>Walk me through a project you shipped and kept alive in production. What broke, and how did you fix it?</li>
   <li>How do you deploy, and what happens when a deployment fails at 2am?</li>
@@ -237,16 +254,16 @@
 </ol>
 <p>The answers tell you more than any CV. You&rsquo;re listening for ownership, honesty, and business thinking — not buzzwords.</p>
 
-<h2>Ready to hire?</h2>
+<h2 id="ready-to-hire">Ready to hire?</h2>
 <p>If you want a senior engineer who covers backend, DevOps, mobile, and automation without the agency overhead, that is exactly what I do. Read <a href="/about/">my full profile</a>, browse <a href="/projects/">delivered projects</a>, or just <a href="/contact/">message me on WhatsApp</a> with your project — you&rsquo;ll get a clear, fixed quote within 24 hours.</p>        </div>
 
                 <div class="d-flex fw2-wrap gap-d5rem mt-2d5rem pt-1d5rem bdt-1px-solid-he4e4e7">
           <span class="tech-pill">Software Engineering</span><span class="tech-pill">Hiring</span><span class="tech-pill">Laravel</span><span class="tech-pill">DevOps</span><span class="tech-pill">Lunova Digital</span><span class="tech-pill">Bangladesh</span><span class="tech-pill">Web Developer</span>        </div>
         
         <!-- Author box: reinforces E-E-A-T + Person entity on every article -->
-        <aside class="d-flex gap-1d25rem ai-flex-start mt-2d5rem p-1d5rem bg-hf4f4f5 bd-1px-solid-he4e4e7 br-1rem">
-          <img src="/assets/images/ajdm-jakiur-rahman.jpg" alt="AJDM Jakiur Rahman" width="64" height="64" loading="lazy" decoding="async"
-               class="w-64px h-64px br-50pc of-cover object-center-top bd-2px-solid-h2563eb fsh-0" />
+        <aside class="author-box">
+          <picture><source srcset="/assets/images/ajdm-jakiur-rahman-240.webp" type="image/webp" /><img src="/assets/images/ajdm-jakiur-rahman.jpg" alt="AJDM Jakiur Rahman" width="64" height="64" loading="lazy" decoding="async"
+               class="w-64px h-64px br-50pc of-cover object-center-top bd-2px-solid-h2563eb fsh-0" /></picture>
           <div>
             <p class="fw-800 c-h09090b mb-d2rem">AJDM Jakiur Rahman</p>
             <p class="fs-d8125rem c-h52525b mb-d5rem">Full-Stack Developer, DevOps Engineer &amp; Founder of <a href="https://lunovadigital.net" target="_blank" rel="noopener noreferrer">Lunova Digital</a> — Dhaka, Bangladesh.</p>
@@ -321,12 +338,12 @@
       <div class="footer-grid">
         <div>
           <div class="footer-logo ai-flex-start gap-1rem mb-1rem">
-            <img src="/assets/images/ajdm-jakiur-rahman.jpg"
+            <picture><source srcset="/assets/images/ajdm-jakiur-rahman-240.webp" type="image/webp" /><img src="/assets/images/ajdm-jakiur-rahman.jpg"
                  alt="AJDM Jakiur Rahman"
                  width="56" height="56"
                  loading="lazy"
                  decoding="async"
-                 class="w-56px h-56px br-50pc of-cover object-center-top bd-2px-solid-rgba255_255_255_d2 fsh-0" />
+                 class="w-56px h-56px br-50pc of-cover object-center-top bd-2px-solid-rgba255_255_255_d2 fsh-0" /></picture>
             <div>
               <span class="d-block fw-700 c-hfff fs-d9375rem lh-1d3">AJDM Jakiur Rahman</span>
               <span class="d-block fs-d75rem c-rgba255_255_255_d45 mt-d2rem">Founder &amp; CEO, Lunova Digital</span>
@@ -373,12 +390,12 @@
         </nav>
         <div>
           <p class="footer-heading">Contact</p>
-          <ul class="footer-links" role="list">
+          <address><ul class="footer-links" role="list">
             <li><a href="https://wa.me/8801406618808?text=Hi%20Jakiur%2C%20I%20want%20to%20discuss%20a%20project" target="_blank" rel="noopener noreferrer">WhatsApp: +8801406618808</a></li>
             <li><a href="mailto:ceo@lunovadigital.net">ceo@lunovadigital.net</a></li>
             <li><a href="https://lunovadigital.net" target="_blank" rel="noopener noreferrer">lunovadigital.net</a></li>
             <li class="c-rgba255_255_255_d4 fs-d875rem">Dhaka, Bangladesh</li>
-          </ul>
+          </ul></address>
         </div>
       </div>
       <div class="footer-bottom">

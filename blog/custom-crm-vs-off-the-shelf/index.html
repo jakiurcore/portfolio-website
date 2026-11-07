@@ -42,6 +42,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/css/style.css" />
   <link rel="alternate" type="application/rss+xml" title="AJDM Jakiur Rahman — Blog" href="/feed.xml" />
 
@@ -133,12 +134,12 @@
   <header id="navbar" role="banner">
     <div class="container nav-inner">
       <a href="/" class="nav-logo" aria-label="AJDM Jakiur Rahman — Home">
-        <img src="/assets/images/ajdm-jakiur-rahman.jpg"
+        <picture><source srcset="/assets/images/ajdm-jakiur-rahman-240.webp" type="image/webp" /><img src="/assets/images/ajdm-jakiur-rahman.jpg"
              alt="AJDM Jakiur Rahman"
              width="34" height="34"
              class="nav-logo-photo"
              loading="eager"
-             decoding="async" />
+             decoding="async" /></picture>
         <span>AJDM Jakiur Rahman</span>
       </a>
       <nav aria-label="Primary navigation">
@@ -175,7 +176,7 @@
   <main id="main">
 
     <article>
-    <header class="page-hero section section-dark" aria-labelledby="post-h1">
+    <header class="page-hero section hero-blue post-hero" aria-labelledby="post-h1">
       <div class="container pos-relative z-1 mw-820px">
         <nav aria-label="Breadcrumb" class="breadcrumb">
           <ol role="list" class="d-flex gap-d5rem lst-none p-0 m-0-0-1d5rem fw2-wrap">
@@ -198,16 +199,32 @@
       </div>
     </header>
 
+    <figure class="post-cover">
+      <img src="/assets/images/blog/custom-crm-vs-off-the-shelf.jpg" alt="A computer screen displaying a business data and analytics dashboard" width="1200" height="675" fetchpriority="high" decoding="async" />
+    </figure>
+
     <div class="section section-white">
       <div class="container mw-760px">
         <div class="blog-body">
           <p class="lead">Choose off-the-shelf CRM/ERP software when your process is standard and you need it running this week. Choose custom when your workflow is a competitive advantage, when per-user fees are ballooning, or when you need deep integration with systems you already run. The deciding factor is total cost and fit over three years — not the price in month one.</p>
+          <nav class="toc" aria-labelledby="toc-heading">
+            <p class="toc-heading" id="toc-heading">In this article</p>
+            <ol>
+              <li><a href="#what-off-the-shelf-does-well">What off-the-shelf does well</a></li>
+              <li><a href="#what-custom-does-well">What custom does well</a></li>
+              <li><a href="#the-real-comparison-three-year-total-cost">The real comparison: three-year total cost</a></li>
+              <li><a href="#a-middle-path-that-usually-wins">A middle path that usually wins</a></li>
+              <li><a href="#how-to-decide">How to decide</a></li>
+              <li><a href="#build-a-system-that-fits-your-business">Build a system that fits your business</a></li>
+            </ol>
+          </nav>
 
-<h2>What off-the-shelf does well</h2>
+
+<h2 id="what-off-the-shelf-does-well">What off-the-shelf does well</h2>
 <p>Tools like Salesforce, HubSpot, and Zoho are mature, instantly available, and maintained for you. If your sales or operations process is fairly standard, they're often the right starting point — no build time, no upfront cost, support included.</p>
 <p>Their weaknesses show up later: per-user monthly fees that scale painfully with headcount, features you pay for but never use, and the constant friction of bending your process to fit their software.</p>
 
-<h2>What custom does well</h2>
+<h2 id="what-custom-does-well">What custom does well</h2>
 <ul>
   <li><strong>Exact fit</strong> — the system models <em>your</em> workflow, so staff stop working around the software.</li>
   <li><strong>You own it</strong> — no per-seat tax; adding your 50th user costs nothing extra.</li>
@@ -216,25 +233,25 @@
 </ul>
 <p>The trade-off is a real upfront investment and the responsibility of maintenance — which is why it should be built by someone who also handles <a href="/services/devops-cloud-engineering/">deployment and upkeep</a>.</p>
 
-<h2>The real comparison: three-year total cost</h2>
+<h2 id="the-real-comparison-three-year-total-cost">The real comparison: three-year total cost</h2>
 <p>A subscription CRM at a modest per-user price looks cheap until you multiply it by your team size and 36 months. A custom build front-loads the cost and then stays flat. Somewhere around a few dozen users — or the moment you need something the SaaS simply can't do — custom becomes both cheaper and better. Always model the three-year number.</p>
 
-<h2>A middle path that usually wins</h2>
+<h2 id="a-middle-path-that-usually-wins">A middle path that usually wins</h2>
 <p>You rarely need to build everything at once. Identify the one workflow that off-the-shelf handles worst — the part where your team wastes the most time — and build that module custom first, integrating it with tools you keep. This phased approach delivers value in weeks and spreads the investment.</p>
 
-<h2>How to decide</h2>
+<h2 id="how-to-decide">How to decide</h2>
 <p>Pick off-the-shelf if your process is standard, your team is small, and you need it now. Pick custom if your process is a differentiator, your per-user bill is climbing, or you're stitching several tools together to cover gaps. When in doubt, start with the single highest-pain module.</p>
 
-<h2>Build a system that fits your business</h2>
+<h2 id="build-a-system-that-fits-your-business">Build a system that fits your business</h2>
 <p>I build <a href="/services/custom-crm-erp-development/">custom CRM and ERP systems</a> on <a href="/services/laravel-development/">Laravel</a> — sales pipelines, inventory, HR, and financial reporting, integrated with the tools you already use and deployed with monitoring included. See also <a href="/blog/custom-wordpress-plugin-development-guide/">custom vs off-the-shelf for WordPress</a>. <a href="/contact/">Message me on WhatsApp</a> for a fixed quote within 24 hours.</p>        </div>
 
                 <div class="d-flex fw2-wrap gap-d5rem mt-2d5rem pt-1d5rem bdt-1px-solid-he4e4e7">
           <span class="tech-pill">CRM</span><span class="tech-pill">ERP</span><span class="tech-pill">Laravel</span><span class="tech-pill">Bangladesh</span>        </div>
         
         <!-- Author box: reinforces E-E-A-T + Person entity on every article -->
-        <aside class="d-flex gap-1d25rem ai-flex-start mt-2d5rem p-1d5rem bg-hf4f4f5 bd-1px-solid-he4e4e7 br-1rem">
-          <img src="/assets/images/ajdm-jakiur-rahman.jpg" alt="AJDM Jakiur Rahman" width="64" height="64" loading="lazy" decoding="async"
-               class="w-64px h-64px br-50pc of-cover object-center-top bd-2px-solid-h2563eb fsh-0" />
+        <aside class="author-box">
+          <picture><source srcset="/assets/images/ajdm-jakiur-rahman-240.webp" type="image/webp" /><img src="/assets/images/ajdm-jakiur-rahman.jpg" alt="AJDM Jakiur Rahman" width="64" height="64" loading="lazy" decoding="async"
+               class="w-64px h-64px br-50pc of-cover object-center-top bd-2px-solid-h2563eb fsh-0" /></picture>
           <div>
             <p class="fw-800 c-h09090b mb-d2rem">AJDM Jakiur Rahman</p>
             <p class="fs-d8125rem c-h52525b mb-d5rem">Full-Stack Developer, DevOps Engineer &amp; Founder of <a href="https://lunovadigital.net" target="_blank" rel="noopener noreferrer">Lunova Digital</a> — Dhaka, Bangladesh.</p>
@@ -309,12 +326,12 @@
       <div class="footer-grid">
         <div>
           <div class="footer-logo ai-flex-start gap-1rem mb-1rem">
-            <img src="/assets/images/ajdm-jakiur-rahman.jpg"
+            <picture><source srcset="/assets/images/ajdm-jakiur-rahman-240.webp" type="image/webp" /><img src="/assets/images/ajdm-jakiur-rahman.jpg"
                  alt="AJDM Jakiur Rahman"
                  width="56" height="56"
                  loading="lazy"
                  decoding="async"
-                 class="w-56px h-56px br-50pc of-cover object-center-top bd-2px-solid-rgba255_255_255_d2 fsh-0" />
+                 class="w-56px h-56px br-50pc of-cover object-center-top bd-2px-solid-rgba255_255_255_d2 fsh-0" /></picture>
             <div>
               <span class="d-block fw-700 c-hfff fs-d9375rem lh-1d3">AJDM Jakiur Rahman</span>
               <span class="d-block fs-d75rem c-rgba255_255_255_d45 mt-d2rem">Founder &amp; CEO, Lunova Digital</span>
@@ -361,12 +378,12 @@
         </nav>
         <div>
           <p class="footer-heading">Contact</p>
-          <ul class="footer-links" role="list">
+          <address><ul class="footer-links" role="list">
             <li><a href="https://wa.me/8801406618808?text=Hi%20Jakiur%2C%20I%20want%20to%20discuss%20a%20project" target="_blank" rel="noopener noreferrer">WhatsApp: +8801406618808</a></li>
             <li><a href="mailto:ceo@lunovadigital.net">ceo@lunovadigital.net</a></li>
             <li><a href="https://lunovadigital.net" target="_blank" rel="noopener noreferrer">lunovadigital.net</a></li>
             <li class="c-rgba255_255_255_d4 fs-d875rem">Dhaka, Bangladesh</li>
-          </ul>
+          </ul></address>
         </div>
       </div>
       <div class="footer-bottom">
