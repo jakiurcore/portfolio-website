@@ -289,7 +289,7 @@ h1.section-title{font-size:var(--fs-h1);line-height:1.04;letter-spacing:-.03em}
 /* ════════════════════════════════════════════════
    GRID LAYOUTS
    ════════════════════════════════════════════════ */
-.grid-3{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr))}
+.grid-3{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
 .grid-3 > * > *,.stat-grid > *{min-width:0}
 .lg-two-col{grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr))}
 .gtc-1fr-1fr{grid-template-columns:repeat(auto-fit,minmax(min(100%,150px),1fr))}
