@@ -6,7 +6,7 @@ Location: Dhaka, Bangladesh
 Website: https://ajdmjakiur.com/
 Company: https://lunovadigital.net/
 Contact: https://ajdmjakiur.com/contact/
-Email: hello@lunovadigital.net
+Email: ceo@lunovadigital.net
 WhatsApp: +8801406618808
 
 /* TECHNOLOGIES */

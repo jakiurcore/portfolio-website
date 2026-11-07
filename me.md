@@ -33,7 +33,7 @@ These are pure code changes — no external accounts or decisions needed from Ja
 
 ### 6. Add contact form to /contact/ page
 **File:** `contact/index.php` + `includes/process.php`
-**What:** Add a simple HTML form (name, email, project type, message) that submits to `process.php` and sends an email to `hello@lunovadigital.net`. Captures leads who prefer email over WhatsApp.
+**What:** Add a simple HTML form (name, email, project type, message) that submits to `process.php` and sends an email to `ceo@lunovadigital.net`. Captures leads who prefer email over WhatsApp.
 **Status:** Can do right now.
 
 ### 7. Add testimonials section to homepage

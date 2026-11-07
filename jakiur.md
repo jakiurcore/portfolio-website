@@ -64,7 +64,7 @@ Decide what range to show on service pages, e.g.:
 - **Crunchbase** — add yourself as founder of Lunova Digital (helps Google Knowledge Panel)
 
 ### 8. Create a Gravatar
-- Go to gravatar.com → sign up with `hello@lunovadigital.net`
+- Go to gravatar.com → sign up with `ceo@lunovadigital.net`
 - Upload your profile photo
 - This makes your photo appear on WordPress sites, community forums, and developer tools
 
